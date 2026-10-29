@@ -1,0 +1,6 @@
+rowz_drop5 s0 split 0: macro 92.43 in 99.3 out 85.6 50s
+rowz_drop5 s0 split 1: macro 94.73 in 99.6 out 89.9 50s
+rowz_drop5 s0 split 2: macro 92.93 in 99.9 out 85.9 46s
+rowz_drop5 s0 split 3: macro 88.91 in 96.7 out 81.1 42s
+rowz_drop5 s0 split 4: macro 95.99 in 97.8 out 94.2 37s
+== rowz_drop5 seed0: val macro 93.00  inner 98.65  outer 87.35  per split [92.4, 94.7, 92.9, 88.9, 96.0]

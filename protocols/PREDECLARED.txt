@@ -1,0 +1,26 @@
+PREDECLARED VARIANTS FOR EVALUATION (phase 2). Written before any evaluation split (eval/run_5..104), Tier 2 or Tier 3 test set was loaded
+by phase 2 code. Not to be changed afterwards.
+
+Selection basis: 5 tuning splits only (mean validation Macro-AUROC over 3 seeds, Tier 1 grid protocol at the Tier-1-chosen configuration;
+tuning-split analogue of Tier 3 for cross-speed). All variants tried are listed in tuning_table.csv / tuning_t3_table.csv.
+
+Common settings for every declared variant (identical to Tier 1 LF-PNCN unless stated):
+  network      : Net(rows=R) in scripts/phase2/trainer.py = LF-PNCN architecture (three conv stems 3x[Conv1d 7/5/3, BN, ReLU], concat 96, three heads);
+                 R = 15 tensor rows (30 for the six-band input); Ball output excluded from the loss
+  optimiser    : Adam, lr 1e-3, batch 64, weight decay 1e-4 (coupled), 40 epochs, constant learning rate, drop_last
+  seed         : seed of evaluation split r = r (as Tier 1); Tier 3: seed = r; Tier 2: pair p with seeds p and p+1000
+  standardiser : per-channel mean/std over the training windows only (computed after the per-window row transform)
+  input cache  : work/data/cache/pu_windows.npz t_mad (1-s windows, 3 bands 500-2500, 2500-5000, 5000-10000 Hz) unless stated
+
+V1  rowz_drop      : per-window row z-score (each of the 3x15 rows: x - median over the 64 order positions, divided by 1.4826*MAD + 0.05; applied identically
+                     to training and test windows, no statistics shared across windows) + dropout 0.3 on the 96-d embedding before the heads.
+                     Input = t_mad (15 rows).  Tier 1: 100 evaluation splits.  This is the variant that will ALSO be run on Tier 3 (train 1500 rpm,
+                     test 1500 and 900 rpm, 100 splits) and Tier 2 (15 healthy-pair splits, 2 seeds), because it is the best one on the tuning splits.
+V2  rowz           : row z-score as in V1, no dropout.  Tier 1 only.
+V3  rowc           : per-window row centring only (x - median over the 64 order positions, no division), no dropout.  Tier 1 only.
+V4  rowz_b6_drop   : row z-score + dropout 0.3 with a six-band input (500-1500, 1500-2500, 2500-3750, 3750-5000, 5000-7500, 7500-10000 Hz; 30 rows;
+                     work/results/phase2/cache/feat_L1b6.npy built by scripts/phase2/build_features.py).  Tier 1 only.
+
+Reference (not re-run): LF-PNCN (Tier 1 results in work/results/tier1, Tier 2/3 in work/results/tier2_3) and B1 (work/results/b1, evaltools/results).
+Comparisons: bearing-level cluster bootstrap, paired, B=2000, stratified, 95% interval, vs LF-PNCN and vs B1 (scripts/phase2/analyze_phase2.py).
+Variants tried on the tuning splits and NOT declared: L4, ML14, cpw1, comb, b6, aug, base_drop, rowz_comb, rowz_aug, rowc_aug, rowc_b6, rowz_drop5 (see tuning_table.csv).

@@ -1,0 +1,11 @@
+T2 rowz_drop pair 0 seed 0: macro 82.2 (in 83.1 out 81.3) elapsed 163s
+T2 rowz_drop pair 0 seed 1000: macro 85.4 (in 87.0 out 83.8) elapsed 318s
+T2 rowz_drop pair 1 seed 1: macro 86.0 (in 90.4 out 81.7) elapsed 478s
+T2 rowz_drop pair 1 seed 1001: macro 89.3 (in 93.5 out 85.2) elapsed 635s
+T2 rowz_drop pair 2 seed 2: macro 86.0 (in 89.5 out 82.6) elapsed 770s
+T2 rowz_drop pair 2 seed 1002: macro 83.2 (in 88.6 out 77.8) elapsed 901s
+T2 rowz_drop pair 3 seed 3: macro 84.8 (in 89.4 out 80.2) elapsed 1033s
+T2 rowz_drop pair 3 seed 1003: macro 84.0 (in 88.0 out 80.1) elapsed 1147s
+T2 rowz_drop pair 4 seed 4: macro 85.0 (in 89.9 out 80.0) elapsed 1256s
+T2 rowz_drop pair 4 seed 1004: macro 85.7 (in 92.4 out 79.0) elapsed 1370s
+DONE 1370

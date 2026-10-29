@@ -1,0 +1,24 @@
+comb s0 split 0: macro 91.05 in 94.5 out 87.6 19s
+comb s0 split 1: macro 92.62 in 94.4 out 90.8 18s
+comb s0 split 2: macro 89.02 in 95.3 out 82.8 15s
+comb s0 split 3: macro 80.09 in 83.5 out 76.7 15s
+comb s0 split 4: macro 92.35 in 92.4 out 92.3 16s
+== comb seed0: val macro 89.02  inner 92.03  outer 86.02  per split [91.0, 92.6, 89.0, 80.1, 92.3]
+rowz_comb s0 split 0: macro 91.45 in 98.9 out 84.0 16s
+rowz_comb s0 split 1: macro 93.52 in 99.5 out 87.5 16s
+rowz_comb s0 split 2: macro 92.26 in 100.0 out 84.5 16s
+rowz_comb s0 split 3: macro 90.06 in 96.4 out 83.7 18s
+rowz_comb s0 split 4: macro 94.89 in 96.5 out 93.3 16s
+== rowz_comb seed0: val macro 92.43  inner 98.26  outer 86.61  per split [91.4, 93.5, 92.3, 90.1, 94.9]
+rowz_drop s0 split 0: macro 92.16 in 99.4 out 84.9 19s
+rowz_drop s0 split 1: macro 94.87 in 99.7 out 90.0 17s
+rowz_drop s0 split 2: macro 92.46 in 100.0 out 85.0 19s
+rowz_drop s0 split 3: macro 91.51 in 96.5 out 86.5 18s
+rowz_drop s0 split 4: macro 96.22 in 97.7 out 94.8 17s
+== rowz_drop seed0: val macro 93.44  inner 98.65  outer 88.23  per split [92.2, 94.9, 92.5, 91.5, 96.2]
+rowz_aug s0 split 0: macro 91.41 in 99.0 out 83.9 17s
+rowz_aug s0 split 1: macro 93.51 in 99.5 out 87.5 13s
+rowz_aug s0 split 2: macro 92.58 in 100.0 out 85.2 13s
+rowz_aug s0 split 3: macro 88.30 in 96.6 out 80.0 14s
+rowz_aug s0 split 4: macro 93.50 in 94.5 out 92.5 14s
+== rowz_aug seed0: val macro 91.86  inner 97.91  outer 85.81  per split [91.4, 93.5, 92.6, 88.3, 93.5]

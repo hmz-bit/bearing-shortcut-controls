@@ -1,0 +1,79 @@
+== t3_mult4: 50 splits, epochs 30, workers 6, mult 4, seed 0
+split 6: train bearings 11, files 220, std_train 0.35173
+    epoch 1/30 loss 0.4007
+    epoch 5/30 loss 0.0509
+    epoch 10/30 loss 0.0105
+    epoch 15/30 loss 0.0135
+    epoch 20/30 loss 0.0032
+    epoch 25/30 loss 0.0072
+    epoch 30/30 loss 0.0020
+split 6 done in 54.4s (train 54.2s)
+split 8: train bearings 11, files 220, std_train 0.36362
+    epoch 1/30 loss 0.3820
+    epoch 5/30 loss 0.0394
+    epoch 10/30 loss 0.0131
+    epoch 15/30 loss 0.0162
+    epoch 20/30 loss 0.0052
+    epoch 25/30 loss 0.0094
+    epoch 30/30 loss 0.0045
+split 8 done in 49.3s (train 49.1s)
+split 10: train bearings 11, files 220, std_train 0.33818
+    epoch 1/30 loss 0.4280
+    epoch 5/30 loss 0.0657
+    epoch 10/30 loss 0.0241
+    epoch 15/30 loss 0.0135
+    epoch 20/30 loss 0.0041
+    epoch 25/30 loss 0.0183
+    epoch 30/30 loss 0.0083
+split 10 done in 48.0s (train 47.8s)
+split 12: train bearings 11, files 220, std_train 0.29066
+    epoch 1/30 loss 0.4104
+    epoch 5/30 loss 0.0532
+    epoch 10/30 loss 0.0150
+    epoch 15/30 loss 0.0132
+    epoch 20/30 loss 0.0046
+    epoch 25/30 loss 0.0113
+    epoch 30/30 loss 0.0055
+split 12 done in 49.6s (train 49.3s)
+split 14: train bearings 11, files 220, std_train 0.31067
+    epoch 1/30 loss 0.3898
+    epoch 5/30 loss 0.0469
+    epoch 10/30 loss 0.0145
+    epoch 15/30 loss 0.0160
+    epoch 20/30 loss 0.0045
+    epoch 25/30 loss 0.0101
+    epoch 30/30 loss 0.0083
+split 14 done in 52.4s (train 52.2s)
+split 16: train bearings 11, files 220, std_train 0.30212
+    epoch 1/30 loss 0.4122
+    epoch 5/30 loss 0.0455
+    epoch 10/30 loss 0.0237
+    epoch 15/30 loss 0.0130
+    epoch 20/30 loss 0.0086
+    epoch 25/30 loss 0.0106
+    epoch 30/30 loss 0.0085
+split 16 done in 49.9s (train 49.8s)
+split 18: train bearings 11, files 220, std_train 0.34534
+    epoch 1/30 loss 0.4259
+    epoch 5/30 loss 0.0444
+    epoch 10/30 loss 0.0113
+    epoch 15/30 loss 0.0127
+    epoch 20/30 loss 0.0067
+    epoch 25/30 loss 0.0066
+    epoch 30/30 loss 0.0016
+split 18 done in 51.6s (train 51.3s)
+split 20: train bearings 11, files 220, std_train 0.32571
+    epoch 1/30 loss 0.4072
+    epoch 5/30 loss 0.0418
+    epoch 10/30 loss 0.0140
+    epoch 15/30 loss 0.0135
+    epoch 20/30 loss 0.0032
+    epoch 25/30 loss 0.0066
+    epoch 30/30 loss 0.0050
+split 20 done in 55.9s (train 55.7s)
+split 22: train bearings 11, files 220, std_train 0.38475
+    epoch 1/30 loss 0.3457
+    epoch 5/30 loss 0.0345
+    epoch 10/30 loss 0.0115
+    epoch 15/30 loss 0.0154
+    epoch 20/30 loss 0.0034

@@ -1,0 +1,10 @@
+# third-party material and large caches are fetched or rebuilt locally
+/data/*
+!/data/README.md
+/bearing-data-leakage/
+__pycache__/
+*.pyc
+/results/phase2/cache/
+/results/b1/shards/
+/results/b1/env_spectra.npy
+/results/b1/signals_42k.f32

@@ -1,0 +1,8 @@
+{
+ "lr": 0.0003,
+ "bs": 64,
+ "wd": 0.0001,
+ "epochs": 40,
+ "val_macro_mean": 78.75738710820826,
+ "selected_on": "5 tuning splits, variant t_max"
+}

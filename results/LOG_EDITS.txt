@@ -1,0 +1,21 @@
+Mechanical edits to log files: a local absolute path prefix in Python warning lines was removed.
+Everything else in these files is unchanged.
+
+kaist/log_build.txt
+  original sha256: 5db988b5f6abcf9d101149818068dcdf7b7221cc6b8c5a831b7ca7005f6f668e
+  edited   sha256: d415f2df7c96a7403b15e78cb398890f303e6d215e85e9f2c9dffb35114258be
+  occurrences of the path prefix removed: 1
+  removed prefix: <local absolute path of the original working directory>\
+
+rtf/analyze_log.txt
+  original sha256: 1b3aea11d5a03dec55790e575b6b98a0f33d1e3e94d4ec15ea899ff827e33eea
+  edited   sha256: dc08335f74dca237464915895583a6d9a0db8dee1e26e4cfdd16b7844f8ff2d4
+  occurrences of the path prefix removed: 3
+  removed prefix: <local absolute path of the original working directory>\
+
+rtf/analyze_log_interim.txt
+  original sha256: 6824a8ff974b9e931bb46b3debc686223fcad8b29d363d8b481a312fb51814b4
+  edited   sha256: 2d000e09b792f854ec4817555c42c26331201c3ef4d4ddd83744ceeaad601df7
+  occurrences of the path prefix removed: 3
+  removed prefix: <local absolute path of the original working directory>\
+

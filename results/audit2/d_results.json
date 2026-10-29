@@ -1,0 +1,23 @@
+{
+ "runs": {
+  "i_real_val": {
+   "sha256": "06a877ee4ebbb18917400030d6eedf5df40ec2f2f4dfb26e2c3a99fa49cb1753",
+   "n_train": 3514
+  },
+  "i_repeat": {
+   "sha256": "06a877ee4ebbb18917400030d6eedf5df40ec2f2f4dfb26e2c3a99fa49cb1753",
+   "n_train": 3514
+  },
+  "ii_noise": {
+   "sha256": "06a877ee4ebbb18917400030d6eedf5df40ec2f2f4dfb26e2c3a99fa49cb1753",
+   "n_train": 3514
+  },
+  "iii_single_other": {
+   "sha256": "06a877ee4ebbb18917400030d6eedf5df40ec2f2f4dfb26e2c3a99fa49cb1753",
+   "n_train": 3514
+  }
+ },
+ "repeat_deterministic": true,
+ "noise_identical": true,
+ "single_other_identical": true
+}

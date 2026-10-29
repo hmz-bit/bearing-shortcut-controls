@@ -1,0 +1,12 @@
+base s1 split 0: macro 92.60 in 94.5 out 90.7 47s
+base s1 split 1: macro 91.89 in 94.9 out 88.9 49s
+base s1 split 2: macro 82.45 in 91.4 out 73.5 48s
+base s1 split 3: macro 82.94 in 89.4 out 76.5 51s
+base s1 split 4: macro 95.40 in 94.6 out 96.2 51s
+== base seed1: val macro 89.06  inner 92.96  outer 85.15  per split [92.6, 91.9, 82.4, 82.9, 95.4]
+base s2 split 0: macro 90.82 in 92.5 out 89.1 46s
+base s2 split 1: macro 92.72 in 94.9 out 90.5 48s
+base s2 split 2: macro 84.29 in 93.5 out 75.1 53s
+base s2 split 3: macro 81.74 in 87.9 out 75.6 70s
+base s2 split 4: macro 95.27 in 95.0 out 95.5 51s
+== base seed2: val macro 88.97  inner 92.77  outer 85.16  per split [90.8, 92.7, 84.3, 81.7, 95.3]

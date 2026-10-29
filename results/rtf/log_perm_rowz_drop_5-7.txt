@@ -1,0 +1,7 @@
+rowz_drop perm0 split 5: held 67.4 (IR 72.0 OR 62.8) train 100.0 t=45s
+rowz_drop perm1 split 5: held 69.8 (IR 84.4 OR 55.3) train 100.0 t=88s
+rowz_drop perm0 split 6: held 67.7 (IR 74.9 OR 60.5) train 100.0 t=134s
+rowz_drop perm1 split 6: held 72.0 (IR 78.1 OR 65.8) train 100.0 t=181s
+rowz_drop perm0 split 7: held 46.7 (IR 47.8 OR 45.6) train 100.0 t=229s
+rowz_drop perm1 split 7: held 68.0 (IR 67.7 OR 68.3) train 100.0 t=279s
+DONE perm_rowz_drop_r5-7

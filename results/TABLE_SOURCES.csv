@@ -1,0 +1,114 @@
+location_in_CROSS_DATASET_SUMMARY,printed_value,source_file_under_results,key_path_or_column,value_in_source,printed_equals_rounded_source,comment
+"table row PU, column base (LF-PNCN)",85.63,tier1/metrics.json,metrics/LF-PNCN/macro_mean,85.62962857004608,yes,same value: tier1/metrics_table.csv column macro_mean row LF-PNCN; phase2/eval_metrics.json tier1/metrics/LF-PNCN/macro
+"table row PU, column rowz_drop",88.85,phase2/eval_metrics.json,tier1/metrics/rowz_drop/macro,88.85031522514423,yes,
+"table row PU, column B1",79.58,tier1/metrics.json,metrics/B1 (WDCNN envelope)/macro_mean,79.58332774843048,yes,B1 on PU = third-party saved logits scored by scripts/evaltools (see docs/DATA.md)
+"table row PU, column rowz_drop - base (point)",3.22,phase2/eval_metrics.json,tier1/paired/rowz_drop - LF-PNCN/macro/point,3.2206866550981483,yes,
+"table row PU, column rowz_drop - base (CI low)",-0.88,phase2/eval_metrics.json,tier1/paired/rowz_drop - LF-PNCN/macro/ci_low,-0.876531736875428,yes,
+"table row PU, column rowz_drop - base (CI high)",8.72,phase2/eval_metrics.json,tier1/paired/rowz_drop - LF-PNCN/macro/ci_high,8.724543305336788,yes,
+"table row PU, column rowz_drop - B1 (point)",9.27,phase2/eval_metrics.json,tier1/paired/rowz_drop - B1/macro/point,9.266987476713783,yes,
+"table row PU, column rowz_drop - B1 (CI low)",4.66,phase2/eval_metrics.json,tier1/paired/rowz_drop - B1/macro/ci_low,4.662313792701084,yes,
+"table row PU, column rowz_drop - B1 (CI high)",15.68,phase2/eval_metrics.json,tier1/paired/rowz_drop - B1/macro/ci_high,15.682751513123787,yes,
+"Notes, base minus B1 on PU (point)",6.05,tier1/metrics.json,paired/LF-PNCN - B1 (WDCNN envelope)/point,6.0463008216156355,yes,
+"Notes, base minus B1 on PU (CI low)",0.31,tier1/metrics.json,paired/LF-PNCN - B1 (WDCNN envelope)/ci_low,0.3068731055410126,yes,
+"Notes, base minus B1 on PU (CI high)",11.93,tier1/metrics.json,paired/LF-PNCN - B1 (WDCNN envelope)/ci_high,11.930226206127887,yes,
+"table row CWRU, column base",88.40,cwru/cwru_results_b1.json,base/macro,88.40108134195972,yes,also cwru/cwru_results.json
+"table row CWRU, column rowz_drop",95.29,cwru/cwru_results_b1.json,rowz_drop/macro,95.28708389857039,yes,also cwru/cwru_results.json
+"table row CWRU, column B1",71.75,cwru/cwru_results_b1.json,b1/macro,71.74523407335907,yes,
+"table row CWRU, column rowz_drop - base (point)",6.89,cwru/cwru_results_b1.json,rowz_drop_minus_base_macro/point,6.886002556610663,yes,
+"table row CWRU, column rowz_drop - base (CI low)",1.47,cwru/cwru_results_b1.json,rowz_drop_minus_base_macro/ci/0,1.471346130504049,yes,
+"table row CWRU, column rowz_drop - base (CI high)",11.36,cwru/cwru_results_b1.json,rowz_drop_minus_base_macro/ci/1,11.356259623817673,yes,
+"table row CWRU, column rowz_drop - B1 (point)",23.54,cwru/cwru_results_b1.json,rowz_drop_minus_b1_macro/point,23.541849825211315,yes,
+"table row CWRU, column rowz_drop - B1 (CI low)",15.50,cwru/cwru_results_b1.json,rowz_drop_minus_b1_macro/ci/0,15.50448031572624,yes,
+"table row CWRU, column rowz_drop - B1 (CI high)",31.17,cwru/cwru_results_b1.json,rowz_drop_minus_b1_macro/ci/1,31.169845906279324,yes,
+"Notes, base minus B1 on CWRU (point)",16.66,cwru/cwru_results_b1.json,base_minus_b1_macro/point,16.655847268600652,yes,
+"Notes, base minus B1 on CWRU (CI low)",10.42,cwru/cwru_results_b1.json,base_minus_b1_macro/ci/0,10.421792114768358,yes,
+"Notes, base minus B1 on CWRU (CI high)",24.20,cwru/cwru_results_b1.json,base_minus_b1_macro/ci/1,24.198142360668573,yes,
+"table row UORED-VAFCLS, column base",80.92,uored/uored_results_b1.json,base/macro,80.9155542366691,yes,also uored/uored_results.json
+"table row UORED-VAFCLS, column rowz_drop",91.55,uored/uored_results_b1.json,rowz_drop/macro,91.55064828341857,yes,also uored/uored_results.json
+"table row UORED-VAFCLS, column B1",94.21,uored/uored_results_b1.json,b1/macro,94.21341307523741,yes,
+"table row UORED-VAFCLS, column rowz_drop - base (point)",10.64,uored/uored_results_b1.json,rowz_drop_minus_base_macro/point,10.635094046749472,yes,
+"table row UORED-VAFCLS, column rowz_drop - base (CI low)",5.20,uored/uored_results_b1.json,rowz_drop_minus_base_macro/ci/0,5.203583905896639,yes,
+"table row UORED-VAFCLS, column rowz_drop - base (CI high)",17.35,uored/uored_results_b1.json,rowz_drop_minus_base_macro/ci/1,17.346985155404823,yes,
+"table row UORED-VAFCLS, column rowz_drop - B1 (point)",-2.66,uored/uored_results_b1.json,rowz_drop_minus_b1_macro/point,-2.6627647918188444,yes,
+"table row UORED-VAFCLS, column rowz_drop - B1 (CI low)",-6.21,uored/uored_results_b1.json,rowz_drop_minus_b1_macro/ci/0,-6.211262277672926,yes,
+"table row UORED-VAFCLS, column rowz_drop - B1 (CI high)",0.29,uored/uored_results_b1.json,rowz_drop_minus_b1_macro/ci/1,0.2880090298659343,yes,
+"Notes, base minus B1 on UORED (point)",-13.30,uored/uored_results_b1.json,base_minus_b1_macro/point,-13.297858838568317,yes,
+"Notes, base minus B1 on UORED (CI low)",-21.54,uored/uored_results_b1.json,base_minus_b1_macro/ci/0,-21.540654180709822,yes,
+"Notes, base minus B1 on UORED (CI high)",-6.68,uored/uored_results_b1.json,base_minus_b1_macro/ci/1,-6.68213023703221,yes,
+"table row XJTU-SY, column base",74.07,xjtu/xjtu_results.json,primary/base/macro,74.06856168119312,yes,
+"table row XJTU-SY, column rowz_drop",76.04,xjtu/xjtu_results.json,primary/rowz_drop/macro,76.04146606032333,yes,
+"table row XJTU-SY, column B1",69.84,xjtu/xjtu_results.json,primary/b1/macro,69.841787900679,yes,
+"table row XJTU-SY, column rowz_drop - base (point)",1.97,xjtu/xjtu_results.json,primary/rowz_drop_minus_base_macro/point,1.9729043791302132,yes,
+"table row XJTU-SY, column rowz_drop - base (CI low)",-4.0,xjtu/xjtu_results.json,primary/rowz_drop_minus_base_macro/ci/0,-4.016725350629319,yes,
+"table row XJTU-SY, column rowz_drop - base (CI high)",7.4,xjtu/xjtu_results.json,primary/rowz_drop_minus_base_macro/ci/1,7.405719911302138,yes,
+"table row XJTU-SY, column rowz_drop - B1 (point)",6.20,xjtu/xjtu_results.json,primary/rowz_drop_minus_b1_macro/point,6.1996781596443356,yes,
+"table row XJTU-SY, column rowz_drop - B1 (CI low)",-6.3,xjtu/xjtu_results.json,primary/rowz_drop_minus_b1_macro/ci/0,-6.2675345664741915,yes,
+"table row XJTU-SY, column rowz_drop - B1 (CI high)",13.4,xjtu/xjtu_results.json,primary/rowz_drop_minus_b1_macro/ci/1,13.42226407093703,yes,
+"Notes, base minus B1 on XJTU (point)",4.23,xjtu/xjtu_results.json,primary/base_minus_b1_macro/point,4.226773780514122,yes,
+"Notes, base minus B1 on XJTU (CI low)",-8.8,xjtu/xjtu_results.json,primary/base_minus_b1_macro/ci/0,-8.754476675131361,yes,
+"Notes, base minus B1 on XJTU (CI high)",10.5,xjtu/xjtu_results.json,primary/base_minus_b1_macro/ci/1,10.48139987251739,yes,
+"table row Paderborn run-to-failure, column base",76.42,rtf/rtf_results.json,primary/base/macro,76.4230303723612,yes,
+"table row Paderborn run-to-failure, column rowz_drop",78.85,rtf/rtf_results.json,primary/rowz_drop/macro,78.8521741339665,yes,
+"table row Paderborn run-to-failure, column B1",72.51,rtf/rtf_results.json,primary/b1/macro,72.50635419222684,yes,
+"table row Paderborn run-to-failure, column rowz_drop - base (point)",2.43,rtf/rtf_results.json,primary/rowz_drop_minus_base_macro/point,2.429143761605303,yes,
+"table row Paderborn run-to-failure, column rowz_drop - base (CI low)",-1.54,rtf/rtf_results.json,primary/rowz_drop_minus_base_macro/ci/0,-1.5364053854491788,yes,
+"table row Paderborn run-to-failure, column rowz_drop - base (CI high)",6.59,rtf/rtf_results.json,primary/rowz_drop_minus_base_macro/ci/1,6.589071396744118,yes,
+"table row Paderborn run-to-failure, column rowz_drop - B1 (point)",6.35,rtf/rtf_results.json,primary/rowz_drop_minus_b1_macro/point,6.345819941739663,yes,
+"table row Paderborn run-to-failure, column rowz_drop - B1 (CI low)",2.09,rtf/rtf_results.json,primary/rowz_drop_minus_b1_macro/ci/0,2.0930590025633173,yes,
+"table row Paderborn run-to-failure, column rowz_drop - B1 (CI high)",12.15,rtf/rtf_results.json,primary/rowz_drop_minus_b1_macro/ci/1,12.148940403893173,yes,
+"Notes, base minus B1 on Paderborn run-to-failure (point)",3.92,rtf/rtf_results.json,primary/base_minus_b1_macro/point,3.9166761801343597,yes,
+"Notes, base minus B1 on Paderborn run-to-failure (CI low)",-1.43,rtf/rtf_results.json,primary/base_minus_b1_macro/ci/0,-1.434858411256907,yes,
+"Notes, base minus B1 on Paderborn run-to-failure (CI high)",9.88,rtf/rtf_results.json,primary/base_minus_b1_macro/ci/1,9.875198887434,yes,
+"Notes, life-stage-only detector on XJTU-SY",84.9,xjtu/null_life_stage.json,oracle_real_labels_macro_mean_100_splits,84.85209949386334,yes,"score = 1[faulty stage], true labels, mean over 100 splits; script scripts/xjtu/null_life_stage.py"
+"Notes, 56 threshold exceeded: XJTU-SY base permutation control",63.1,xjtu/xjtu_results.json,permutation_control/base/held_macro_mean,63.084354289211866,yes,threshold 56 is declared in protocols/PREDECLARED_XJTU.txt item 14 (and PREDECLARED_RTF.txt item 12); printed value rounded here to one decimal
+"Notes, 56 threshold exceeded: XJTU-SY rowz_drop permutation control",58.2,xjtu/xjtu_results.json,permutation_control/rowz_drop/held_macro_mean,58.19424918151077,yes,
+"Notes, 56 threshold: XJTU-SY B1 permutation control (below 56)",55.8,xjtu/xjtu_results.json,permutation_control/b1/held_macro_mean,55.83706602681625,yes,only B1 is below 56 on XJTU-SY
+"Notes, 56 threshold exceeded: Paderborn RTF base label-pair permutation",65.2,rtf/rtf_results.json,permutation_control/perm_base/held_macro_mean,65.24515656897799,yes,
+"Notes, 56 threshold exceeded: Paderborn RTF rowz_drop label-pair permutation",64.2,rtf/rtf_results.json,permutation_control/perm_rowz_drop/held_macro_mean,64.2202465289909,yes,
+"Notes, 56 threshold exceeded: Paderborn RTF B1 label-pair permutation",63.6,rtf/rtf_results.json,permutation_control/perm_b1/held_macro_mean,63.61821076382619,yes,
+"Notes, own B1 about +3 above the published value on PU",3,b1/val_3seed_table.csv,mean of column diff over 6 rows,2.952,yes,"6 validation splits, 3-seed mean of own B1 minus published per-split Macro-AUROC; stated as 'about +3' (value 2.95)"
+"Notes, own B1 minus published value on CWRU: own value",71.75,cwru/cwru_results_b1.json,b1/macro,71.74523407335907,yes,"published value 74.51 comes from the cited paper (Vieira et al., arXiv v5) and is NOT reproduced in this repository; the printed -2.8 is 71.75 - 74.51 = -2.76"
+"'What the data support': rowz_drop minus base point estimate, PU",3.22,phase2/eval_metrics.json,tier1/paired/rowz_drop - LF-PNCN/macro/point,3.2206866550981483,yes,range '+2.0 to +10.6' is the min and max over the five datasets; CI lower bound -0.88: not above 0
+"'What the data support': rowz_drop minus base point estimate, CWRU",6.89,cwru/cwru_results_b1.json,rowz_drop_minus_base_macro/point,6.886002556610663,yes,range '+2.0 to +10.6' is the min and max over the five datasets; CI lower bound 1.47: above 0 (significant)
+"'What the data support': rowz_drop minus base point estimate, UORED",10.64,uored/uored_results_b1.json,rowz_drop_minus_base_macro/point,10.635094046749472,yes,range '+2.0 to +10.6' is the min and max over the five datasets; CI lower bound 5.20: above 0 (significant)
+"'What the data support': rowz_drop minus base point estimate, XJTU",1.97,xjtu/xjtu_results.json,primary/rowz_drop_minus_base_macro/point,1.9729043791302132,yes,range '+2.0 to +10.6' is the min and max over the five datasets; CI lower bound -4.02: not above 0
+"'What the data support': rowz_drop minus base point estimate, RTF",2.43,rtf/rtf_results.json,primary/rowz_drop_minus_base_macro/point,2.429143761605303,yes,range '+2.0 to +10.6' is the min and max over the five datasets; CI lower bound -1.54: not above 0
+Corrections: 'lower confidence bounds are above -4.0 points',-4.0,five files above (CI low of rowz_drop minus base),min over datasets,-4.016725350629319,yes,minimum -4.0167 (XJTU-SY); this is slightly below -4.0 when not rounded
+"'What the data support': rowz_drop minus B1 sign and significance, PU",,phase2/eval_metrics.json,tier1/paired/rowz_drop - B1/macro,point=9.266987476713783; ci_low=4.662313792701084,n/a,above B1; significant (CI low > 0)
+"'What the data support': rowz_drop minus B1 sign and significance, CWRU",,cwru/cwru_results_b1.json,rowz_drop_minus_b1_macro,point=23.541849825211315; ci_low=15.50448031572624,n/a,above B1; significant (CI low > 0)
+"'What the data support': rowz_drop minus B1 sign and significance, UORED",,uored/uored_results_b1.json,rowz_drop_minus_b1_macro,point=-2.6627647918188444; ci_low=-6.211262277672926,n/a,below B1; not significant
+"'What the data support': rowz_drop minus B1 sign and significance, XJTU",,xjtu/xjtu_results.json,primary/rowz_drop_minus_b1_macro,point=6.1996781596443356; ci_low=-6.2675345664741915,n/a,above B1; not significant
+"'What the data support': rowz_drop minus B1 sign and significance, RTF",,rtf/rtf_results.json,primary/rowz_drop_minus_b1_macro,point=6.345819941739663; ci_low=2.0930590025633173,n/a,above B1; significant (CI low > 0)
+"Notes, weak outer-race bearing UORED O8",,uored/per_bearing_auroc.csv,"rows label=outer, bearing=8, state=all, column auroc",base=23.3; rowz_drop=53.1; b1=67.6,n/a,weak outer-race bearing named in the Notes (AUROC x100)
+"Notes, weak outer-race bearing CWRU DE_OR_14",,cwru/per_bearing_auroc_b1.csv,"rows label=outer, group=DE_OR_14, column auroc",base=54.0; rowz_drop=37.3; b1=32.9,n/a,weak outer-race bearing named in the Notes (AUROC x100)
+"Notes, weak outer-race bearing Paderborn run-to-failure B01",,rtf/per_bearing_auroc.csv,"rows label=outer, bearing=B01, negatives=all_negatives, column auroc",base=76.8; rowz_drop=79.2; b1=43.6,n/a,weak outer-race bearing named in the Notes (AUROC x100)
+"Notes, weak outer-race bearing Paderborn run-to-failure B11",,rtf/per_bearing_auroc.csv,"rows label=outer, bearing=B11, negatives=all_negatives, column auroc",base=52.2; rowz_drop=68.7; b1=43.5,n/a,weak outer-race bearing named in the Notes (AUROC x100)
+"Notes, weak outer-race bearing Paderborn run-to-failure B16",,rtf/per_bearing_auroc.csv,"rows label=outer, bearing=B16, negatives=all_negatives, column auroc",base=49.6; rowz_drop=54.8; b1=32.9,n/a,weak outer-race bearing named in the Notes (AUROC x100)
+"Notes, weak outer-race bearing XJTU-SY 3_1",,xjtu/per_bearing_auroc.csv,"rows label=outer, bearing=B3_1, negatives=all_negatives, column auroc",base=77.1; rowz_drop=79.2; b1=63.3,n/a,weak outer-race bearing named in the Notes (AUROC x100)
+"Notes, weak outer-race bearing XJTU-SY 3_2",,xjtu/per_bearing_auroc.csv,"rows label=outer, bearing=B3_2, negatives=all_negatives, column auroc",base=60.7; rowz_drop=61.0; b1=77.9,n/a,weak outer-race bearing named in the Notes (AUROC x100)
+"Notes, weak outer-race bearings PU KA15/KA22/KA30",,phase2/post_hoc_eval_log.txt,"table 'outer bearings: mean pairwise AUROC' rows KA15, KA22, KA30","see file (columns LF-PNCN, rowz_drop, B1)",n/a,also phase2/diag1_log.txt and diag5_log.txt (no outer-race line in the envelope spectrum)
+Corrections: UORED stage-only reference,70.0,audit/stage_only_reference_log.txt,line 'UORED stage-only reference ... macro',70.0,yes,script scripts/audit/stage_only_reference.py
+Corrections: Paderborn run-to-failure stage-only reference,84.1,audit/stage_only_reference_log.txt,line 'Paderborn run-to-failure stage-only reference ... macro',84.1,yes,script scripts/audit/stage_only_reference.py
+Corrections: XJTU-SY stage-only reference,84.9,xjtu/null_life_stage.json,oracle_real_labels_macro_mean_100_splits,84.85209949386334,yes,
+"Corrections: stage-matched control, XJTU-SY rowz_drop",81.3,xjtu/xjtu_results.json,late_life_negatives/rowz_drop/macro,81.33705273473055,yes,pre-declared descriptive analysis (negatives restricted to late-life windows of bearings without the defect)
+"Corrections: stage-matched control, XJTU-SY b1",67.5,xjtu/xjtu_results.json,late_life_negatives/b1/macro,67.51361783939109,yes,pre-declared descriptive analysis (negatives restricted to late-life windows of bearings without the defect)
+"Corrections: stage-matched control, Paderborn run-to-failure rowz_drop",72.96,rtf/rtf_results.json,late_life_negatives/rowz_drop/macro,72.96183206845225,yes,pre-declared descriptive analysis (negatives restricted to late-life windows of bearings without the defect)
+"Corrections: stage-matched control, Paderborn run-to-failure b1",66.10,rtf/rtf_results.json,late_life_negatives/b1/macro,66.09858966295009,yes,pre-declared descriptive analysis (negatives restricted to late-life windows of bearings without the defect)
+"Corrections: stage-matched control, Paderborn run-to-failure base",68.52,rtf/rtf_results.json,late_life_negatives/base/macro,68.5173767912835,yes,pre-declared descriptive analysis (negatives restricted to late-life windows of bearings without the defect)
+"Corrections: whole-bearing permutation, Paderborn run-to-failure (about 49), base",48.8,rtf/rtf_results.json,permutation_control/permw_base/held_macro_mean,48.7990973538626,yes,post hoc; addendum protocols/PREDECLARED_RTF_ADDENDUM1.txt
+"Corrections: whole-bearing permutation, Paderborn run-to-failure (about 49), rowz_drop",48.9,rtf/rtf_results.json,permutation_control/permw_rowz_drop/held_macro_mean,48.90699709954471,yes,
+"Corrections: whole-bearing permutation, Paderborn run-to-failure (about 49), B1",49.1,rtf/rtf_results.json,permutation_control/permw_b1/held_macro_mean,49.12216942470174,yes,
+"Corrections: leave-one-negative-bearing-out, XJTU-SY, rowz_drop minus B1, min",8.5,audit/stage_matched_robustness_log.txt,summary line of the dataset block,8.46,yes,script scripts/audit/stage_matched_robustness.py; point estimates
+"Corrections: leave-one-negative-bearing-out, XJTU-SY, rowz_drop minus B1, max",17.2,audit/stage_matched_robustness_log.txt,summary line of the dataset block,17.24,yes,script scripts/audit/stage_matched_robustness.py; point estimates
+"Corrections: leave-one-negative-bearing-out, XJTU-SY, rowz_drop minus base, min",1.3,audit/stage_matched_robustness_log.txt,summary line of the dataset block,1.28,yes,script scripts/audit/stage_matched_robustness.py; point estimates
+"Corrections: leave-one-negative-bearing-out, XJTU-SY, rowz_drop minus base, max",8.7,audit/stage_matched_robustness_log.txt,summary line of the dataset block,8.69,yes,script scripts/audit/stage_matched_robustness.py; point estimates
+"Corrections: number of dropped bearings, XJTU-SY",13,audit/stage_matched_robustness_log.txt,number of table rows of the dataset block,13.0,yes,
+"Corrections: leave-one-negative-bearing-out, Paderborn run-to-failure, rowz_drop minus B1, min",5.6,audit/stage_matched_robustness_log.txt,summary line of the dataset block,5.64,yes,script scripts/audit/stage_matched_robustness.py; point estimates
+"Corrections: leave-one-negative-bearing-out, Paderborn run-to-failure, rowz_drop minus B1, max",9.7,audit/stage_matched_robustness_log.txt,summary line of the dataset block,9.69,yes,script scripts/audit/stage_matched_robustness.py; point estimates
+"Corrections: leave-one-negative-bearing-out, Paderborn run-to-failure, rowz_drop minus base, min",2.3,audit/stage_matched_robustness_log.txt,summary line of the dataset block,2.32,yes,script scripts/audit/stage_matched_robustness.py; point estimates
+"Corrections: leave-one-negative-bearing-out, Paderborn run-to-failure, rowz_drop minus base, max",6.1,audit/stage_matched_robustness_log.txt,summary line of the dataset block,6.08,yes,script scripts/audit/stage_matched_robustness.py; point estimates
+"Corrections: number of dropped bearings, Paderborn run-to-failure",14,audit/stage_matched_robustness_log.txt,number of table rows of the dataset block,14.0,yes,
+Corrections: model scores in parentheses (UORED 80.9 / 91.6 / 94.2; XJTU-SY 74.1 / 76.0 / 69.8; Paderborn run-to-failure 76.4 / 78.9 / 72.5),,see the table rows above,"columns base, rowz_drop, B1",same values rounded to one decimal,n/a,no new number
+Corrections: 'significant in two' and 'all five datasets',,see the rows 'rowz_drop minus base' above,CI low > 0 on CWRU and UORED only,see value_in_source of the 'What the data support' rows,n/a,count derived from the five intervals
+"Corrections: life-stage definition of UORED (first 5 files, files 25-30, files 45-50)",,docs/DATA.md,section UORED-VAFCLS,dataset authors' definition (Sehri et al. 2023),n/a,"external source, quoted in docs/DATA.md"
+"Corrections: first and last 10% rule (XJTU-SY, Paderborn run-to-failure) and declaration dates 16:43 and 16:06",,protocols/PREDECLARED_XJTU.txt; protocols/PREDECLARED_RTF.txt; protocols/TIMESTAMPS.csv,item 2 of each file; column protocol_mtime,see files,n/a,protocol text and file modification times

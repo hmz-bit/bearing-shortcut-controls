@@ -1,0 +1,12 @@
+rowz s1 split 0: macro 92.29 in 99.2 out 85.3 50s
+rowz s1 split 1: macro 92.03 in 99.3 out 84.8 50s
+rowz s1 split 2: macro 87.97 in 99.8 out 76.1 55s
+rowz s1 split 3: macro 89.87 in 97.0 out 82.8 48s
+rowz s1 split 4: macro 95.45 in 97.5 out 93.3 40s
+== rowz seed1: val macro 91.52  inner 98.57  outer 84.47  per split [92.3, 92.0, 88.0, 89.9, 95.4]
+rowz s2 split 0: macro 92.02 in 99.3 out 84.7 40s
+rowz s2 split 1: macro 93.05 in 99.4 out 86.7 52s
+rowz s2 split 2: macro 90.98 in 99.9 out 82.1 48s
+rowz s2 split 3: macro 85.71 in 94.3 out 77.1 45s
+rowz s2 split 4: macro 96.24 in 97.6 out 94.9 53s
+== rowz seed2: val macro 91.60  inner 98.11  outer 85.08  per split [92.0, 93.1, 91.0, 85.7, 96.2]

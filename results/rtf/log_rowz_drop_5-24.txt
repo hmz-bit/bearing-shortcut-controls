@@ -1,0 +1,21 @@
+rowz_drop split 5: held 76.7 (IR 84.2 OR 69.3) train 100.0 t=59s
+rowz_drop split 6: held 74.8 (IR 87.2 OR 62.4) train 100.0 t=118s
+rowz_drop split 7: held 83.7 (IR 73.2 OR 94.1) train 100.0 t=178s
+rowz_drop split 8: held 72.8 (IR 79.6 OR 66.0) train 100.0 t=240s
+rowz_drop split 9: held 83.0 (IR 66.0 OR 99.9) train 100.0 t=298s
+rowz_drop split 10: held 69.1 (IR 59.4 OR 78.9) train 100.0 t=355s
+rowz_drop split 11: held 80.1 (IR 80.4 OR 79.8) train 100.0 t=402s
+rowz_drop split 12: held 88.5 (IR 80.0 OR 97.0) train 100.0 t=451s
+rowz_drop split 13: held 85.1 (IR 88.5 OR 81.7) train 100.0 t=496s
+rowz_drop split 14: held 82.7 (IR 88.2 OR 77.2) train 100.0 t=538s
+rowz_drop split 15: held 79.8 (IR 88.5 OR 71.2) train 100.0 t=588s
+rowz_drop split 16: held 80.1 (IR 78.5 OR 81.8) train 100.0 t=639s
+rowz_drop split 17: held 72.1 (IR 67.6 OR 76.6) train 100.0 t=690s
+rowz_drop split 18: held 87.2 (IR 77.9 OR 96.5) train 100.0 t=749s
+rowz_drop split 19: held 85.7 (IR 92.2 OR 79.2) train 100.0 t=805s
+rowz_drop split 20: held 72.1 (IR 72.6 OR 71.5) train 100.0 t=860s
+rowz_drop split 21: held 76.8 (IR 72.4 OR 81.3) train 100.0 t=911s
+rowz_drop split 22: held 72.5 (IR 78.9 OR 66.1) train 100.0 t=950s
+rowz_drop split 23: held 74.9 (IR 85.3 OR 64.4) train 100.0 t=991s
+rowz_drop split 24: held 80.4 (IR 67.0 OR 93.9) train 100.0 t=1013s
+DONE rowz_drop_r5-24

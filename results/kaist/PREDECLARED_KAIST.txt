@@ -1,0 +1,45 @@
+PREDECLARED: one-shot supplementary evaluation on the KAIST bearing dataset, part 1 (constant speed; Jung et al., Data in Brief 48, 109049; Mendeley Data record ztmf3m7h5x version 6, CC BY 4.0). Written before any data file of this dataset was downloaded or opened; the only things read before this file existed are the record listing (file names and sizes), the member listing of vibration.zip (names and sizes) and the text of the data article. Not to be changed afterwards; later changes go in dated ADDENDA.
+
+STATUS AND HONEST FRAMING
+- Supplementary evidence, not a confirmation: the damage is artificial (cracks "simulated according to the crack sizes" 0.3, 1.0 and 3.0 mm), there is a single speed (3010 rpm) and a single bearing model (NSK 6205 DDU), the data article does not state outright that each crack size is a separate bearing (Fig. 6 "Bearing by crack size" suggests it), and the order and dates of the recordings are not stated. The stage-free fault-type design (inner versus outer race among faulty recordings) is the one used in audit round 3, so no life-stage cue exists; a severity cue (amplitude grows with crack size) is possible and is controlled below.
+- Selection history, disclosed: this dataset was found by a literature and repository search that evaluated and rejected many others (HUST, Ottawa, MaFaulDa, DIRG, SEU, SCA, Ferrara, Zenodo and Mendeley sets; documented outside this repository). It was ranked first for a faulty-only fault-type evaluation by that search. It was chosen before any model was run on it. The reader should treat it as one dataset out of a searched set, and the result is reported whatever it is.
+- Every variant that is run is reported. There is no decision rule; the analysis is descriptive. The prediction below is written so that it can be contradicted.
+
+DATA AND UNITS
+- Files: the 18 vibration members of vibration.zip named {0Nm,2Nm,4Nm}_{BPFI,BPFO}_{03,10,30}.mat (BPFI = inner-race fault, BPFO = outer-race fault; 03, 10, 30 = crack size 0.3, 1.0, 3.0 mm; 0, 2, 4 Nm = load). No other member is used (no Normal, Misalign, Unbalance, acoustic, current or temperature file).
+- Physical units: a unit is (race, crack size) = 6 units; the three loads of one unit stay together. Whether a unit is a separate physical bearing is inferred, not stated (see above).
+- Channel: x_direction_housing_A (the housing in which the fault-seeded bearing was installed). If a file lacks a channel of that name, the run stops. y_direction_housing_A is NOT used for any reported number (a sensitivity run with it is allowed only if declared in an addendum before it is run).
+- Sampling rate 25600 Hz; record length 60 s; shaft frequency 50.1667 Hz (3010 rpm, the value given by the article).
+- Geometry as stated in the article: 9 balls, ball diameter 7.90 mm, pitch diameter 38.5 mm, contact angle 0 degrees (article fault frequencies BPFO 179.43 Hz, BPFI 272.07 Hz).
+- Windows: 1 s (25600 samples), hop 6400 samples (25 percent), as for the other datasets with a native rate below the common one; the feature pipeline is that of scripts/lfpncn/features.py with fs = 25600 and the geometry above (bands 500-2500, 2500-5000, 5000-10000 Hz; 5 harmonics; 64 order positions).
+- Labels: inner = 1 for BPFI files, outer = 1 for BPFO files (the two labels are complementary in this dataset).
+
+SPLITS (all bearing-wise, unit-wise)
+- Primary: the 9 splits in which the test set is one inner unit and one outer unit (3 x 3 combinations) and the training set is the remaining 4 units (2 inner, 2 outer). Split index 1 to 9 in the order inner size 03, 10, 30 (outer sizes 03, 10, 30 within each). seed = split index.
+- Secondary (a subset of the primary, declared here): the 3 size-matched splits in which both test units have the same crack size. They remove the severity difference between the two test classes.
+- No other split is run. No confidence interval is computed (6 units; a cluster bootstrap would not be meaningful); all 9 split values are reported next to the mean.
+
+MODELS (frozen, no tuning on any data of this dataset)
+- base (LF-PNCN) and rowz_drop: configuration of scripts/phase2/trainer.py and variants.py exactly as for the other datasets (Adam, learning rate 1e-3, batch 64, weight decay 1e-4, 40 epochs, standardiser on training windows only).
+- rf and rfu: random forest of scripts/rf/rfcommon.py (PARAMS_PRIMARY and PARAMS_U) on its 20 features with fs = 25600 and the geometry above.
+- B1 is NOT run (its envelope-spectrum bank is built for the other datasets; stated limitation).
+- References (not competitors): (a) metadata reference: random forest on the load (0, 2, 4 Nm) only; by design the loads are balanced in both classes, so about 50 is expected; (b) amplitude reference: random forest on the five time-domain statistics of the window only (rms, peak-to-peak, kurtosis, skewness, crest factor) plus the window mean (DC); (c) severity check: the amplitude reference is also reported on the 3 size-matched splits.
+
+METRIC
+- For each split the AUROC of the inner head and of the outer head on the pooled test windows (positives = windows of the test unit of that race), and their mean (Macro-AUROC). Mean over the 9 splits (primary) and over the 3 size-matched splits (secondary).
+
+PREDICTION WRITTEN IN ADVANCE
+- P1: rowz_drop has a Macro-AUROC mean at or above base on the 9 primary splits (the direction seen on the other datasets). It is contradicted if the rowz_drop mean is below the base mean.
+- P2: the amplitude reference is above the networks on the size-unmatched splits if a severity cue exists; on the 3 size-matched splits it should fall. This is a check on the dataset, not on the models.
+- P3: the metadata reference is within 45 to 55.
+- No prediction is made for rowz_drop against the random forest.
+
+RISKS ACKNOWLEDGED IN ADVANCE
+- Unit count (6) and split count (9) are very small; the result cannot support a statistical statement.
+- Same rig, same sensor, same bearing model, same speed for all units; recording order and dates unknown; a session cue cannot be excluded.
+- Artificial damage; severity crossed with class (sizes matched between classes).
+
+OUTPUTS
+- results/kaist/: per-window predictions, per-split table, summary of the mean values and the references, logs. Scripts in scripts/kaist/. Raw data in data/kaist/ (not versioned).
+
+ADDENDUM 1 (written after the first file was downloaded and its structure (not its content statistics) was inspected, before any window, feature or model output existed): the .mat files do not store channel names. Each file holds a struct Signal with x_values (increment 3.90625e-05 s = 1/25600 s, 1536000 values) and y_values.values (1536000 x 4, unit g). The channel named in this protocol, x_direction_housing_A, is taken to be column 0, following the channel order stated in the data article (x_direction_housing_A, y_direction_housing_A, x_direction_housing_B, y_direction_housing_B; the time stamp is stored separately in x_values). This mapping is an assumption from the article's order and is stated as such. The sampling increment is checked by the code against 1/25600 s.

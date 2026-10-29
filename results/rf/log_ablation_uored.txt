@@ -1,0 +1,2 @@
+uored time5 {"inner": 95.57465759678597, "outer": 92.8594868517166, "macro": 94.21707222425128, "sd_over_splits": 4.549507302423271, "n_splits": 100} 101s
+uored spectral15 {"inner": 88.4697680788897, "outer": 74.75110025566106, "macro": 81.61043416727539, "sd_over_splits": 9.27295091689667, "n_splits": 100} 104s

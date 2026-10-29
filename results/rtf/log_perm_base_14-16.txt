@@ -1,0 +1,7 @@
+base perm0 split 14: held 75.5 (IR 74.9 OR 76.1) train 100.0 t=53s
+base perm1 split 14: held 78.7 (IR 58.6 OR 98.7) train 100.0 t=100s
+base perm0 split 15: held 82.0 (IR 81.3 OR 82.8) train 100.0 t=148s
+base perm1 split 15: held 69.6 (IR 73.8 OR 65.4) train 100.0 t=196s
+base perm0 split 16: held 49.7 (IR 51.6 OR 47.8) train 100.0 t=244s
+base perm1 split 16: held 72.0 (IR 94.3 OR 49.8) train 100.0 t=291s
+DONE perm_base_r14-16

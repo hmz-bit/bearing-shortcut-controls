@@ -1,0 +1,7 @@
+PREDECLARED: audit round 4 (post hoc, descriptive), written before the numbers below were computed. Origin: methodological questions F-03 and F-05 about the manuscript.
+
+Inputs: existing predictions only (results/tier1/lfpncn_predictions_long.parquet, results/phase2/eval/rowz_drop_r5-104_predictions_long.parquet for PU; results/audit3/pred_k_{xjtu,rtf}_{base,rowz_drop}.parquet for the stage-free setting). No training. Bootstrap as in the other analyses (paired bearing-level cluster bootstrap, B = 2000, seed 20261029, stratified by cluster label type).
+
+  P1 (paired difference of contrasts, PU): the difference between the contrast rowz_drop minus base under healthy-only negatives and the same contrast under all negatives, computed on the same bootstrap draws. It is the quantity that would support the statement that the contrast on the development set depends on the negative class. Post hoc.
+  P2 (single primary comparison, declared now and post hoc): the mean of the two stage-free macro contrasts rowz_drop minus base (XJTU-SY and Paderborn run-to-failure), with a bootstrap interval obtained by resampling the bearings of each dataset independently and averaging the two contrasts per draw. It is declared as the primary comparison of the manuscript because the stage-free setting is the one control under which the label cannot be solved by the life stage; it is chosen after the results of that setting were known and is therefore itself post hoc.
+All other intervals in the manuscript are descriptive and unadjusted.

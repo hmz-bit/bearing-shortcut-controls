@@ -1,0 +1,12 @@
+T3tune rowz_drop s0 split 0: 1500 86.1 (out 76.5) | 900 83.7 (in 89.6 out 77.7)
+T3tune rowz_drop s0 split 1: 1500 94.9 (out 90.2) | 900 92.2 (in 93.8 out 90.6)
+T3tune rowz_drop s0 split 2: 1500 92.2 (out 84.4) | 900 85.7 (in 99.5 out 71.9)
+T3tune rowz_drop s0 split 3: 1500 84.6 (out 72.3) | 900 78.6 (in 83.6 out 73.6)
+T3tune rowz_drop s0 split 4: 1500 97.2 (out 95.6) | 900 84.9 (in 84.1 out 85.7)
+== T3tune rowz_drop seed0: 1500 macro 91.00 | 900 macro 85.00 (inner 90.11, outer 79.90) | loss 6.00
+T3tune rowz_aug s0 split 0: 1500 87.8 (out 78.9) | 900 83.8 (in 90.4 out 77.2)
+T3tune rowz_aug s0 split 1: 1500 95.5 (out 91.4) | 900 93.0 (in 95.0 out 90.9)
+T3tune rowz_aug s0 split 2: 1500 92.9 (out 85.8) | 900 87.7 (in 99.6 out 75.9)
+T3tune rowz_aug s0 split 3: 1500 83.6 (out 70.2) | 900 76.2 (in 82.7 out 69.7)
+T3tune rowz_aug s0 split 4: 1500 97.5 (out 96.3) | 900 85.7 (in 85.5 out 86.0)
+== T3tune rowz_aug seed0: 1500 macro 91.48 | 900 macro 85.28 (inner 90.63, outer 79.92) | loss 6.21

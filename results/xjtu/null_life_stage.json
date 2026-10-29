@@ -1,0 +1,26 @@
+{
+ "oracle_perm_macro_mean": 85.45366626042554,
+ "oracle_perm_macro_sd": 3.508550562237606,
+ "n_draws": 40,
+ "oracle_real_labels_macro_mean_100_splits": 84.85209949386334,
+ "models_vs_oracle_on_same_draws": {
+  "base": {
+   "model_perm_macro": 63.084354289211866,
+   "oracle_perm_macro": 85.45366626042554,
+   "model_minus_oracle": -22.369311971213683,
+   "n": 40
+  },
+  "rowz_drop": {
+   "model_perm_macro": 58.19424918151077,
+   "oracle_perm_macro": 85.45366626042554,
+   "model_minus_oracle": -27.259417078914765,
+   "n": 40
+  },
+  "b1": {
+   "model_perm_macro": 55.83706602681625,
+   "oracle_perm_macro": 85.45366626042554,
+   "model_minus_oracle": -29.61660023360929,
+   "n": 40
+  }
+ }
+}

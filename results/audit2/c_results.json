@@ -1,0 +1,42 @@
+[
+ {
+  "dataset": "uored",
+  "features": "DC offset, record length",
+  "mean": 73.7125,
+  "sd": 6.181327269946303,
+  "n_splits": 100,
+  "flagged": true
+ },
+ {
+  "dataset": "cwru",
+  "features": "load, sensor location",
+  "mean": 39.28571428571428,
+  "sd": 0.0,
+  "n_splits": 100,
+  "flagged": false
+ },
+ {
+  "dataset": "xjtu",
+  "features": "condition id, DC offset, record length",
+  "mean": 49.737341597667736,
+  "sd": 9.066886192910419,
+  "n_splits": 100,
+  "flagged": false
+ },
+ {
+  "dataset": "rtf",
+  "features": "set speed, DC offset, record length",
+  "mean": 59.0680607453615,
+  "sd": 6.828227513829465,
+  "n_splits": 100,
+  "flagged": true
+ },
+ {
+  "dataset": "pu",
+  "features": "speed, load torque, radial force (from condition code)",
+  "mean": 50.02272659058126,
+  "sd": 0.0310789885072348,
+  "n_splits": 100,
+  "flagged": false
+ }
+]

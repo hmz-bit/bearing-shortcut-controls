@@ -1,0 +1,2 @@
+xjtu time5 {"inner": 65.65501009947592, "outer": 86.88030331302794, "macro": 76.26765670625194, "sd_over_splits": 6.330334361272642, "n_splits": 100, "stage_matched_macro": 59.29147905010003, "stage_matched_valid_splits": 94} 97s
+xjtu spectral15 {"inner": 56.260250830704216, "outer": 84.74181059612434, "macro": 70.50103071341427, "sd_over_splits": 12.110803482653788, "n_splits": 100, "stage_matched_macro": 79.85140786601569, "stage_matched_valid_splits": 94} 101s

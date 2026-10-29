@@ -1,0 +1,10 @@
+(a) {'macro': 52.04171811393511, 'inner': 61.540155711438295, 'outer': 42.54328051643192} 53.680149040263984
+(b)    split  train_macro  train_inner  train_outer  test_macro  test_inner  test_outer
+0      5        100.0        100.0        100.0       81.87       88.23       75.52
+1      6        100.0        100.0        100.0       96.33       99.66       93.00
+2      7        100.0        100.0        100.0       76.03       88.93       63.12
+3      8        100.0        100.0        100.0       89.16       92.08       86.23
+4      9        100.0        100.0        100.0       94.48       97.60       91.36
+(c) 0 {'lfpncn': {'bad_splits': 0, 'n_splits': 100}, 'b4': {'bad_splits': 0, 'n_splits': 100}, 'b3': {'bad_splits': 0, 'n_splits': 100}}
+(d) {'max_abs_diff_mean_vs_train_recompute': 6.043878741923692e-08, 'max_rel_diff_std_vs_train_recompute': 1.2715417480199366e-07, 'max_abs_diff_mean_vs_all_windows': 0.03843443505308353, 'stats_identical_when_test_windows_replaced_by_garbage': True, 'channels': 45}
+(e) {'mean': 35.84802749633789, 'min': 16.662039279937744, 'max': 802.0060653686523, 'total': 3584.802749633789}

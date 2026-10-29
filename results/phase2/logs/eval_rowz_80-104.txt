@@ -1,0 +1,26 @@
+rowz split 80: macro 88.41 (in 89.9 out 86.9) 102.6s elapsed 108s
+rowz split 81: macro 81.22 (in 76.4 out 86.1) 85.2s elapsed 195s
+rowz split 82: macro 85.33 (in 99.0 out 71.6) 86.3s elapsed 283s
+rowz split 83: macro 91.58 (in 99.4 out 83.8) 85.0s elapsed 370s
+rowz split 84: macro 84.49 (in 99.5 out 69.5) 90.3s elapsed 461s
+rowz split 85: macro 90.87 (in 96.9 out 84.8) 90.5s elapsed 553s
+rowz split 86: macro 93.71 (in 99.7 out 87.7) 91.8s elapsed 647s
+rowz split 87: macro 93.32 (in 100.0 out 86.7) 91.0s elapsed 739s
+rowz split 88: macro 73.30 (in 97.6 out 49.0) 87.5s elapsed 828s
+rowz split 89: macro 97.26 (in 100.0 out 94.5) 89.6s elapsed 920s
+rowz split 90: macro 81.10 (in 96.9 out 65.3) 88.0s elapsed 1009s
+rowz split 91: macro 81.24 (in 91.7 out 70.8) 88.9s elapsed 1100s
+rowz split 92: macro 76.06 (in 97.2 out 54.9) 87.6s elapsed 1189s
+rowz split 93: macro 80.28 (in 95.4 out 65.2) 89.7s elapsed 1280s
+rowz split 94: macro 88.24 (in 94.7 out 81.8) 87.8s elapsed 1370s
+rowz split 95: macro 92.68 (in 99.5 out 85.8) 87.2s elapsed 1458s
+rowz split 96: macro 90.05 (in 99.4 out 80.7) 87.5s elapsed 1547s
+rowz split 97: macro 96.22 (in 100.0 out 92.4) 88.0s elapsed 1637s
+rowz split 98: macro 87.81 (in 96.5 out 79.1) 90.6s elapsed 1729s
+rowz split 99: macro 92.37 (in 99.5 out 85.3) 88.0s elapsed 1819s
+rowz split 100: macro 93.69 (in 99.9 out 87.5) 88.2s elapsed 1909s
+rowz split 101: macro 92.04 (in 98.0 out 86.1) 86.1s elapsed 1996s
+rowz split 102: macro 90.66 (in 95.6 out 85.7) 88.4s elapsed 2086s
+rowz split 103: macro 95.20 (in 100.0 out 90.4) 88.0s elapsed 2176s
+rowz split 104: macro 85.14 (in 92.6 out 77.7) 85.5s elapsed 2263s
+DONE rowz_r80-104: macro 88.09

@@ -1,0 +1,26 @@
+rowz_b6_drop split 55: macro 79.41 (in 97.3 out 61.5) 111.7s elapsed 120s
+rowz_b6_drop split 56: macro 88.65 (in 99.9 out 77.4) 116.2s elapsed 240s
+rowz_b6_drop split 57: macro 86.88 (in 96.0 out 77.8) 111.8s elapsed 356s
+rowz_b6_drop split 58: macro 85.00 (in 98.3 out 71.7) 116.1s elapsed 475s
+rowz_b6_drop split 59: macro 93.85 (in 100.0 out 87.7) 113.2s elapsed 592s
+rowz_b6_drop split 60: macro 92.05 (in 97.6 out 86.5) 106.5s elapsed 702s
+rowz_b6_drop split 61: macro 93.54 (in 99.9 out 87.2) 94.1s elapsed 799s
+rowz_b6_drop split 62: macro 94.08 (in 97.0 out 91.2) 95.0s elapsed 896s
+rowz_b6_drop split 63: macro 74.50 (in 96.4 out 52.6) 97.2s elapsed 997s
+rowz_b6_drop split 64: macro 84.18 (in 99.8 out 68.5) 92.1s elapsed 1092s
+rowz_b6_drop split 65: macro 87.50 (in 99.8 out 75.2) 80.5s elapsed 1175s
+rowz_b6_drop split 66: macro 82.74 (in 95.4 out 70.1) 79.1s elapsed 1256s
+rowz_b6_drop split 67: macro 88.26 (in 97.3 out 79.2) 79.8s elapsed 1339s
+rowz_b6_drop split 68: macro 93.66 (in 99.4 out 87.9) 65.8s elapsed 1407s
+rowz_b6_drop split 69: macro 87.05 (in 94.2 out 79.9) 56.2s elapsed 1465s
+rowz_b6_drop split 70: macro 79.33 (in 93.9 out 64.8) 51.7s elapsed 1519s
+rowz_b6_drop split 71: macro 88.14 (in 96.0 out 80.3) 51.9s elapsed 1573s
+rowz_b6_drop split 72: macro 87.72 (in 100.0 out 75.5) 57.2s elapsed 1632s
+rowz_b6_drop split 73: macro 81.50 (in 95.5 out 67.5) 57.6s elapsed 1691s
+rowz_b6_drop split 74: macro 74.32 (in 97.4 out 51.2) 53.6s elapsed 1747s
+rowz_b6_drop split 75: macro 80.02 (in 98.7 out 61.4) 58.9s elapsed 1808s
+rowz_b6_drop split 76: macro 95.04 (in 100.0 out 90.1) 56.9s elapsed 1867s
+rowz_b6_drop split 77: macro 70.88 (in 79.1 out 62.6) 59.9s elapsed 1929s
+rowz_b6_drop split 78: macro 92.63 (in 95.7 out 89.5) 60.7s elapsed 1991s
+rowz_b6_drop split 79: macro 80.15 (in 86.3 out 74.0) 56.2s elapsed 2050s
+DONE rowz_b6_drop_r55-79: macro 85.64

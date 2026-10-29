@@ -1,0 +1,34 @@
+item,where in main.tex,source file (relative to work/results),key or location
+Table 1 dataset properties,Sec. 3.1,docs/DATA.md; rf/PREDECLARED_RF.txt (18 faulty CWRU configurations),licence and unit counts
+Table 2 base / rowz_drop / B1 / differences,Sec. 4.2,CROSS_DATASET_SUMMARY.md,first table (rows PU CWRU UORED XJTU RTF) and notes below it
+Table 2 RF column,Sec. 4.2,rf/SUMMARY.md; rf/rf_summary_table.csv,macro AUROC of the primary forest
+Life-stage reference 84.9 / 84.1 / 70.0,Sec. 4.3,CROSS_DATASET_SUMMARY.md (corrections section); xjtu/null_life_stage.json,stage-only reference
+Permutation 63.1 / 58.2 / 55.8 (XJTU-SY),Sec. 4.3,xjtu/null_life_stage.json,models_vs_oracle_on_same_draws
+Permutation 51.07 / 52.45 (PU),Sec. 4.3,audit/SUMMARY.md,A2
+Whole-bearing permutation about 49 (RTF),Sec. 4.3,CROSS_DATASET_SUMMARY.md,corrections section
+UORED metadata-only 73.7 and single-feature split,Sec. 4.3,audit2/c_results.json; audit2/c_posthoc_single_features.json,uored
+UORED DC means (50 / 1.3-1.9),Sec. 4.3,data/uored/b1_file_stats.csv (raw_sum / n_raw per file); values reproduced in audit rounds 2 and 3,class means
+Table 3 UORED outer label E1 to E4,Sec. 4.3,audit3/e_results.json,"E1 E2 E3 E4 -> ""1"" -> points and diff"
+RF macro 94.43 -> 88.54 with DC removed,Sec. 4.3,audit3/log_h.txt; audit3/per_split_uored_rf_dm.csv,rf_dm
+PU healthy-only 89.95 / 88.74 / -1.22 [-5.26 +1.93],Sec. 4.3,audit2/ab_results.json,pu -> A1_healthy_only_window
+PU metadata with DC 56.3 / 60.4 / 61.3,Sec. 4.3,audit3/f_results.json,F2 F3 F4
+PU high-DC versus low-DC damaged bearings (98.1 / 93.7 ; 95.9 / 88.9),Sec. 4.3,audit3/g_results.json,base rowz_drop b1
+CWRU channel-matched 94.97 85.78 79.39 65.52 and +9.19 [+2.3 +15.9],Sec. 4.3,audit3/i_results.json,channel_matched -> macro
+Table 4 stage-free setting (base rowz_drop RF metadata),Sec. 4.4,audit3/k_results.json; audit3/log_k.txt,xjtu and rtf -> macro 0 1
+Table 4 B1 column,Sec. 4.4,audit3/k_results.json,xjtu and rtf -> b1 and rowz_drop-b1 (run by audit3_b1_k.py)
+LOCO means and Appendix B table,Sec. 4.6 and App. B,audit3/j_results.json,hold_out_condition_1..3
+Number of split definitions 505,Sec. 4.1,leakage_guard_report.txt,L1 lines
+Test-invariance fingerprint,Sec. 4.1,audit2/d_results.json,runs sha256
+PU 16 of 17 tuning-validation bearings,Sec. 3.1,leakage_guard_report.txt,S1 line
+Minimum detectable difference 10 to 16 points (B1 versus RF) and 5 to 9 points (variant versus base),Sec. 5,evaltools/results/analysis.json (closed form from the bootstrap standard error); widths of the intervals of Table 2,minimum_detectable_effect
+KAIST supplementary results (Sec. 4.7),Sec. 4.7 and App. A,kaist/summary.json; kaist/per_split.csv,models and references per split
+Component ablation (Table 5),Sec. 4.5,ablation/ablation_results.json,uored_original uored_outer_E3 cwru_original cwru_channel_matched xjtu_stage_free rtf_stage_free
+Post hoc summary contrast and difference of contrasts (Sec. 4.3 and 4.4),Sec. 4.3 and 4.4,audit4/primary_results.json,P1_PU P2_stage_free_pooled
+Stage-matched macro AUROC (XJTU-SY 81.3 / 80.1 / 75.5 / 67.5; Paderborn run-to-failure 73.0 / 72.8 / 68.5 / 66.1),Sec. 4.3,CROSS_DATASET_SUMMARY.md (stage-matched notes); rf/SUMMARY.md,stage-matched macro
+"Metadata-only forest, original tasks (XJTU-SY 49.7, RTF 59.1, CWRU 39.3, UORED 73.7, PU 50.0)",Sec. 4.3,audit2/c_results.json,mean per dataset; RTF single features in audit2/SUMMARY.md part C
+Row z-score alone on the PU evaluation splits 88.48,Sec. 3.4 and 4.5,phase2/eval_tables.csv,"tier 1, method rowz"
+"Dropout versus row z-score alone, signs in the stage-free settings (+0.20, -0.35)",Sec. 4.5,ablation/ablation_results.json,rowz_drop minus rowz
+UORED recorded speed 28.3 to 32.5 Hz,Sec. 3.1,uored/speed_check.txt,recorded rotation per file
+Per-bearing outer-race AUROC (weak outer-race table),Sec. 4.8,audit/weak_outer_bearings.csv (scripts/audit/weak_outer_bearings.py),"dataset, unit, base, rowz_drop"
+"Per-label stage-free AUROC (XJTU-SY 75.4 to 92.4 inner, 78.2 to 80.4 outer; RTF 67.6 to 72.5 inner, 59.3 to 71.1 outer)",Sec. 4.4,audit3/k_results.json,xjtu and rtf -> inner and outer
+Number of printed intervals (more than 40),Sec. 5,"manuscript source, before the appendix (counted by a short script)","bracketed intervals of the form [+x, +y] or [-x, -y] in the text and tables of the sections before the appendix: 48"

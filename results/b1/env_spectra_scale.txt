@@ -1,0 +1,1 @@
+env_spectra.npy = envelope spectrum x 1000.0 (float16). divide by 1000.0 to get raw sensor units.

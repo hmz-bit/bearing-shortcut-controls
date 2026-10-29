@@ -1,0 +1,20 @@
+{
+ "time5": {
+  "inner": 81.02423897253757,
+  "outer": 82.81931743767637,
+  "macro": 81.92177820510699,
+  "sd_over_splits": 3.428303452176351,
+  "n_splits": 100,
+  "stage_matched_macro": 57.50715224167199,
+  "stage_matched_valid_splits": 96
+ },
+ "spectral15": {
+  "inner": 68.74291859952287,
+  "outer": 77.89382799015057,
+  "macro": 73.31837329483673,
+  "sd_over_splits": 9.309545318949391,
+  "n_splits": 100,
+  "stage_matched_macro": 67.00277519822757,
+  "stage_matched_valid_splits": 96
+ }
+}

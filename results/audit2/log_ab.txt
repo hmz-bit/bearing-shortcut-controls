@@ -1,0 +1,25 @@
+SANITY pu base: recomputed 85.63 over 100 splits, known 85.63
+SANITY pu rowz_drop: recomputed 88.85 over 100 splits, known 88.85
+SANITY pu b1: recomputed 79.58 over 100 splits, known 79.58
+pu done 10 s
+SANITY uored base: recomputed 80.92 over 100 splits, known 80.92
+SANITY uored rowz_drop: recomputed 91.55 over 100 splits, known 91.55
+SANITY uored b1: recomputed 94.21 over 100 splits, known 94.21
+SANITY uored rf: recomputed 94.43 over 100 splits, known 94.43
+uored done 16 s
+SANITY cwru base: recomputed 88.40 over 100 splits, known 88.4
+SANITY cwru rowz_drop: recomputed 95.29 over 100 splits, known 95.29
+SANITY cwru b1: recomputed 71.75 over 100 splits, known 71.75
+SANITY cwru rf: recomputed 80.35 over 100 splits, known 80.35
+cwru done 24 s
+SANITY xjtu base: recomputed 74.07 over 100 splits, known 74.07
+SANITY xjtu rowz_drop: recomputed 76.04 over 100 splits, known 76.04
+SANITY xjtu b1: recomputed 69.84 over 100 splits, known 69.84
+SANITY xjtu rf: recomputed 79.77 over 100 splits, known 79.77
+xjtu done 27 s
+SANITY rtf base: recomputed 76.42 over 100 splits, known 76.42
+SANITY rtf rowz_drop: recomputed 78.85 over 100 splits, known 78.85
+SANITY rtf b1: recomputed 72.51 over 100 splits, known 72.51
+SANITY rtf rf: recomputed 85.70 over 100 splits, known 85.7
+rtf done 30 s
+DONE

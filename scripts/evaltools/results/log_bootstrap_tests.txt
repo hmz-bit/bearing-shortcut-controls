@@ -1,0 +1,85 @@
+exactness: {'n_compared': 100, 'max_abs_err_weighted': np.float64(2.220446049250313e-16), 'max_abs_err_plain': 1.1102230246251565e-16}
+single: {
+ "exactness": {
+  "n_compared": 100,
+  "max_abs_err_weighted": 2.220446049250313e-16,
+  "max_abs_err_plain": 1.1102230246251565e-16
+ },
+ "single_world": {
+  "true_diff_points": 8.285015111111111,
+  "sd_of_stat_across_worlds": 3.9285418281707396
+ },
+ "single_alt": {
+  "R": 300,
+  "B": 1000,
+  "cluster_coverage": 0.8933333333333333,
+  "cluster_excludes_zero": 0.6033333333333334,
+  "cluster_mean_ci_width": 13.563664485479798,
+  "naive_R": 60,
+  "naive_coverage": 0.4166666666666667,
+  "naive_excludes_zero": 0.9666666666666667,
+  "naive_mean_ci_width": 3.9002370335179837
+ },
+ "single_null": {
+  "R": 300,
+  "B": 1000,
+  "cluster_coverage": 0.89,
+  "cluster_excludes_zero": 0.11,
+  "cluster_mean_ci_width": 12.603850496843434,
+  "naive_R": 60,
+  "naive_coverage": 0.4166666666666667,
+  "naive_excludes_zero": 0.5833333333333334,
+  "naive_mean_ci_width": 3.6326079044892357
+ }
+}
+{
+ "exactness": {
+  "n_compared": 100,
+  "max_abs_err_weighted": 2.220446049250313e-16,
+  "max_abs_err_plain": 1.1102230246251565e-16
+ },
+ "single_world": {
+  "true_diff_points": 8.285015111111111,
+  "sd_of_stat_across_worlds": 3.9285418281707396
+ },
+ "single_alt": {
+  "R": 300,
+  "B": 1000,
+  "cluster_coverage": 0.8933333333333333,
+  "cluster_excludes_zero": 0.6033333333333334,
+  "cluster_mean_ci_width": 13.563664485479798,
+  "naive_R": 60,
+  "naive_coverage": 0.4166666666666667,
+  "naive_excludes_zero": 0.9666666666666667,
+  "naive_mean_ci_width": 3.9002370335179837
+ },
+ "single_null": {
+  "R": 300,
+  "B": 1000,
+  "cluster_coverage": 0.89,
+  "cluster_excludes_zero": 0.11,
+  "cluster_mean_ci_width": 12.603850496843434,
+  "naive_R": 60,
+  "naive_coverage": 0.4166666666666667,
+  "naive_excludes_zero": 0.5833333333333334,
+  "naive_mean_ci_width": 3.6326079044892357
+ },
+ "multi_world": {
+  "true_diff_points": 8.216917824074073
+ },
+ "multi_alt": {
+  "R": 100,
+  "B": 500,
+  "coverage": 0.9,
+  "excludes_zero": 0.85,
+  "mean_ci_width": 9.964315773003262
+ },
+ "multi_null": {
+  "R": 100,
+  "B": 500,
+  "coverage": 0.87,
+  "excludes_zero": 0.13,
+  "mean_ci_width": 9.951093988070582
+ },
+ "seconds": 734.244386434555
+}

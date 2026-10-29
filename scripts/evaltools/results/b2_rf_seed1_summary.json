@@ -1,0 +1,24 @@
+{
+ "tag": "b2_rf_seed1",
+ "params": {
+  "n_estimators": 200,
+  "max_features": "log2",
+  "criterion": "log_loss",
+  "max_depth": 24,
+  "min_samples_split": 15,
+  "min_samples_leaf": 18,
+  "ccp_alpha": 0.0265
+ },
+ "seed": 1,
+ "n_runs": 100,
+ "macro_mean": 69.53167388916016,
+ "macro_std_pop": 15.829237836989146,
+ "macro_std_sample": 15.908982612906028,
+ "auroc_inner": 0.8336700744628905,
+ "auroc_outer": 0.5569634033203125,
+ "published": {
+  "macro_mean": 69.76,
+  "macro_std": 15.72
+ },
+ "seconds": 115.48031711578369
+}

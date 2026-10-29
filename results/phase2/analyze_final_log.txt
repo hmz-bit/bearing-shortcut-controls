@@ -1,0 +1,32 @@
+T1 LF-PNCN        macro 85.63 +- 8.86 | inner 91.34 outer 79.92 | FPR90 in 24.4 out 43.0 | splits 100
+T1 B1             macro 79.58 +- 12.96 | inner 89.87 outer 69.30 | FPR90 in 24.0 out 60.2 | splits 100
+T1 rowz_drop      macro 88.85 +- 6.10 | inner 96.72 outer 80.98 | FPR90 in 10.0 out 45.2 | splits 100
+T1 rowz           macro 88.48 +- 6.31 | inner 96.60 outer 80.36 | FPR90 in 10.3 out 47.3 | splits 100
+T1 rowc           macro 88.17 +- 7.21 | inner 96.60 outer 79.74 | FPR90 in 10.5 out 46.9 | splits 100
+T1 rowz_b6_drop   macro 88.22 +- 6.37 | inner 97.16 outer 79.29 | FPR90 in 7.9 out 48.3 | splits 100
+T1 rowz_drop - LF-PNCN: macro +3.22 [-0.88, +8.72] | inner +5.38 [+2.05, +9.58] | outer +1.06 [-6.08, +7.21]
+T1 rowz_drop - B1: macro +9.27 [+4.66, +15.68] | inner +6.85 [+3.36, +11.24] | outer +11.69 [+3.70, +20.26]
+T1 rowz - LF-PNCN: macro +2.85 [-1.35, +8.39] | inner +5.26 [+1.98, +9.34] | outer +0.44 [-7.15, +6.85]
+T1 rowz - B1: macro +8.90 [+4.45, +15.15] | inner +6.73 [+3.34, +11.02] | outer +11.07 [+3.32, +19.64]
+T1 rowc - LF-PNCN: macro +2.54 [-2.29, +8.37] | inner +5.26 [+1.78, +9.67] | outer -0.18 [-8.76, +6.95]
+T1 rowc - B1: macro +8.58 [+3.75, +15.14] | inner +6.73 [+3.24, +11.31] | outer +10.44 [+2.40, +18.89]
+T1 rowz_b6_drop - LF-PNCN: macro +2.59 [-1.31, +7.90] | inner +5.82 [+2.20, +10.21] | outer -0.63 [-8.03, +5.66]
+T1 rowz_b6_drop - B1: macro +8.64 [+4.60, +14.40] | inner +7.29 [+3.99, +11.58] | outer +9.99 [+1.97, +17.92]
+T3@1500 LF-PNCN        macro 85.00 | inner 88.33 outer 81.68 | FPR90 out 36.0
+T3@900 LF-PNCN        macro 70.48 | inner 85.74 outer 55.23 | FPR90 out 81.1
+T3@1500 B1             macro 85.55 | inner 95.87 outer 75.23 | FPR90 out 45.4
+T3@900 B1             macro 62.35 | inner 68.99 outer 55.71 | FPR90 out 69.1
+T3@1500 rowz_drop      macro 88.00 | inner 95.50 outer 80.49 | FPR90 out 45.2
+T3@900 rowz_drop      macro 81.26 | inner 88.20 outer 74.32 | FPR90 out 60.5
+T3@1500 rowz_drop - LF-PNCN: macro +2.99 [-4.68, +13.38] | inner +7.18 [+0.52, +15.78] | outer -1.19 [-12.98, +8.79]
+T3@900 rowz_drop - LF-PNCN: macro +10.78 [+1.90, +21.86] | inner +2.46 [-7.74, +11.93] | outer +19.09 [+5.35, +31.89]
+T3@1500 rowz_drop - B1: macro +2.45 [-4.58, +8.90] | inner -0.37 [-3.69, +2.76] | outer +5.26 [-5.74, +16.83]
+T3@900 rowz_drop - B1: macro +18.91 [+9.65, +31.75] | inner +19.21 [+5.98, +33.07] | outer +18.61 [+7.53, +27.25]
+T2/first LF-PNCN        macro 84.66 | inner 86.62 outer 82.70 | FPR90 in 31.3 out 51.5
+T2/second LF-PNCN        macro 84.43 | inner 86.88 outer 81.97 | FPR90 in 30.2 out 53.5
+T2/first rowz_drop      macro 85.24 | inner 88.65 outer 81.84 | FPR90 in 33.2 out 52.7
+T2/first rowz_drop - LF-PNCN: macro +0.58 [-6.56, +8.68] | inner +2.03 [-4.90, +11.02] | outer -0.87 [-9.56, +7.67]
+T2/first rowz_drop - B1: macro -1.59 [-12.63, +7.58] | inner -4.65 [-12.40, +1.24] | outer +1.48 [-13.64, +16.52]
+T2/second rowz_drop      macro 84.78 | inner 87.96 outer 81.60 | FPR90 in 34.4 out 52.5
+T2/second rowz_drop - LF-PNCN: macro +0.36 [-6.76, +8.51] | inner +1.08 [-6.00, +9.96] | outer -0.37 [-8.42, +7.82]
+T2/second rowz_drop - B1: macro -2.05 [-13.61, +7.44] | inner -5.34 [-13.41, +0.77] | outer +1.24 [-14.41, +16.60]

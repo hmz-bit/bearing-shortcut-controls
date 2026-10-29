@@ -1,0 +1,6 @@
+base_drop s0 split 0: macro 93.76 in 95.1 out 92.4 50s
+base_drop s0 split 1: macro 90.71 in 93.6 out 87.8 51s
+base_drop s0 split 2: macro 90.92 in 96.5 out 85.3 46s
+base_drop s0 split 3: macro 79.11 in 85.3 out 72.9 42s
+base_drop s0 split 4: macro 94.35 in 93.5 out 95.2 37s
+== base_drop seed0: val macro 89.77  inner 92.81  outer 86.73  per split [93.8, 90.7, 90.9, 79.1, 94.4]

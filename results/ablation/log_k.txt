@@ -1,0 +1,42 @@
+K xjtu rowz split 5: macro 92.7 t=3s
+K xjtu rowz split 15: macro 93.2 t=15s
+K xjtu rowz split 25: macro 92.3 t=25s
+K xjtu rowz split 35: macro 90.5 t=37s
+K xjtu rowz split 45: macro 91.1 t=52s
+K xjtu rowz split 55: macro 79.6 t=64s
+K xjtu rowz split 65: macro 68.3 t=78s
+K xjtu rowz split 75: macro 77.3 t=92s
+K xjtu rowz split 85: macro 92.4 t=101s
+K xjtu rowz split 95: macro 94.0 t=117s
+DONE K xjtu rowz: macro 86.17 inner 92.41 outer 79.93 defined 94 skipped 6
+K xjtu base_drop split 5: macro 89.4 t=3s
+K xjtu base_drop split 15: macro 63.1 t=15s
+K xjtu base_drop split 25: macro 90.2 t=25s
+K xjtu base_drop split 35: macro 87.1 t=38s
+K xjtu base_drop split 45: macro 76.5 t=53s
+K xjtu base_drop split 55: macro 69.1 t=64s
+K xjtu base_drop split 65: macro 77.5 t=77s
+K xjtu base_drop split 75: macro 67.6 t=91s
+K xjtu base_drop split 85: macro 77.6 t=101s
+K xjtu base_drop split 95: macro 87.9 t=116s
+DONE K xjtu base_drop: macro 77.17 inner 75.75 outer 78.59 defined 94 skipped 6
+K rtf rowz split 5: macro 63.4 t=5s
+K rtf rowz split 15: macro 65.6 t=42s
+K rtf rowz split 25: macro 60.1 t=78s
+K rtf rowz split 35: macro 92.5 t=114s
+K rtf rowz split 45: macro 84.8 t=149s
+K rtf rowz split 65: macro 84.0 t=212s
+K rtf rowz split 75: macro 90.1 t=248s
+K rtf rowz split 85: macro 45.5 t=289s
+K rtf rowz split 95: macro 78.7 t=327s
+DONE K rtf rowz: macro 72.17 inner 72.97 outer 71.37 defined 96 skipped 4
+K rtf base_drop split 5: macro 46.1 t=5s
+K rtf base_drop split 15: macro 53.2 t=40s
+K rtf base_drop split 25: macro 44.4 t=73s
+K rtf base_drop split 35: macro 93.4 t=105s
+K rtf base_drop split 45: macro 78.3 t=144s
+K rtf base_drop split 65: macro 68.9 t=214s
+K rtf base_drop split 75: macro 91.6 t=253s
+K rtf base_drop split 85: macro 50.6 t=292s
+K rtf base_drop split 95: macro 66.5 t=329s
+DONE K rtf base_drop: macro 63.58 inner 67.86 outer 59.29 defined 96 skipped 4

@@ -1,0 +1,3 @@
+features rebuilt in 10s; max abs diff of the 15 spectral columns 1.447e-12; of the 5 time statistics [185.0693672582911, 2.2737367544323206e-13, 1.0658141036401503e-14, 3.631470124609848e-14, 11.496284542707198]
+DONE rf_dm: macro 88.54 inner 93.38 outer 83.69 t=116s
+DONE rfu_dm: macro 89.66 inner 93.56 outer 85.76 t=197s

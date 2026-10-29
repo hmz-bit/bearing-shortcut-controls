@@ -1,0 +1,14 @@
+Files not included in the repository (size, or rebuilt by the scripts). Paths are relative to results/.
+sha256 is that of the file produced in the original run.
+
+sha256  size_bytes  path
+0c68399b0d866efc1cdd9b75516ee8713789b8b9d65e6d4ec6044c6970719375  448398  b1/env_index.csv
+5544c26ca661a6e2bcc2bc9589d20600bf7cedc0fb919dde6cfbf75728bdf92c  388836128  b1/env_spectra.npy
+c423c6ab9a80607164b222d8772db94a4eba7d32a53af7c08dcd632bb6ab80fe  1562876696  b1/signals_42k.f32
+7ef93fe74c6c7ecbf394bb7100d1c795c40162ca376aac60bb2e164ab33e7339  264040  b1/signals_meta.csv
+a662e95b0f3ad3e034dd6083898c4edcda3ff204d23e4f399deb8148ef429baa  125107328  phase2/cache/feat_L1b6.npy
+23a545472ebfb85fcf3d22635ab41a194e52ec1edd8b3367ff60af7e6eab641b  62553728  phase2/cache/feat_L1comb.npy
+d36ea0f2597e1519aec248ae84afabb913cdd51cbb72081a13ca0d9b4fa63947  62553728  phase2/cache/feat_L1cpw.npy
+d2e5b8f74b609f067fb5a407a17ebe70b1497aca6e126b1cbf8308a1e420ff1c  62553728  phase2/cache/feat_L2.npy
+ac080beb25921f6ac25bc09f6bd4542c636cdae23c4d2246ac6a30c21c7078e7  62553728  phase2/cache/feat_L4.npy
+e217c4fb1897485579f2236f98bed9402668775a133068ec5e2c0c92617d9323  62553728  phase2/cache/feat_L4cpw.npy

@@ -1,0 +1,21 @@
+base split 65: held 73.3 (IR 83.3 OR 63.4) train 100.0 t=100s
+base split 66: held 75.7 (IR 82.2 OR 69.1) train 100.0 t=192s
+base split 67: held 79.5 (IR 82.6 OR 76.3) train 100.0 t=257s
+base split 68: held 82.4 (IR 90.4 OR 74.3) train 100.0 t=317s
+base split 69: held 76.4 (IR 91.3 OR 61.4) train 100.0 t=380s
+base split 70: held 90.8 (IR 84.9 OR 96.6) train 100.0 t=441s
+base split 71: held 71.7 (IR 87.7 OR 55.6) train 100.0 t=515s
+base split 72: held 78.0 (IR 86.3 OR 69.7) train 100.0 t=580s
+base split 73: held 81.5 (IR 90.2 OR 72.8) train 100.0 t=644s
+base split 74: held 77.9 (IR 91.7 OR 64.0) train 100.0 t=716s
+base split 75: held 91.5 (IR 88.7 OR 94.4) train 100.0 t=782s
+base split 76: held 72.5 (IR 80.9 OR 64.1) train 100.0 t=854s
+base split 77: held 78.0 (IR 82.9 OR 73.0) train 100.0 t=921s
+base split 78: held 88.7 (IR 77.8 OR 99.6) train 100.0 t=987s
+base split 79: held 90.8 (IR 93.6 OR 87.9) train 100.0 t=1055s
+base split 80: held 80.7 (IR 87.9 OR 73.5) train 100.0 t=1115s
+base split 81: held 67.1 (IR 94.0 OR 40.2) train 100.0 t=1171s
+base split 82: held 78.2 (IR 83.6 OR 72.8) train 100.0 t=1225s
+base split 83: held 80.0 (IR 87.1 OR 73.0) train 100.0 t=1281s
+base split 84: held 81.0 (IR 90.1 OR 71.9) train 100.0 t=1341s
+DONE base_r65-84

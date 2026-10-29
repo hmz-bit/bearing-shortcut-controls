@@ -1,0 +1,45 @@
+N09_M07_F10 healthy: band2 mean SNR spectrum in f_o+-3 Hz: top bins (Hz, SNR) = [(47.5, 12.83), (47.25, 8.01), (47.0, 3.32)] | at 3fr 2.92  at f_o 2.3
+N09_M07_F10 outer: band2 mean SNR spectrum in f_o+-3 Hz: top bins (Hz, SNR) = [(46.0, 26.91), (45.75, 11.54), (46.25, 8.95)] | at 3fr 5.85  at f_o 26.91
+N15_M07_F10 healthy: band2 mean SNR spectrum in f_o+-3 Hz: top bins (Hz, SNR) = [(76.25, 5.41), (75.0, 3.95), (76.0, 2.8)] | at 3fr 3.95  at f_o 5.41
+N15_M07_F10 outer: band2 mean SNR spectrum in f_o+-3 Hz: top bins (Hz, SNR) = [(76.25, 34.95), (76.75, 29.36), (76.5, 22.53)] | at 3fr 7.07  at f_o 34.95
+
+mean linear SNR at the 3*f_r bin and the f_o bin (0.25 Hz resolution, 4-s record), by speed, class and band
+                     b1_3fr  b2_3fr  b3_3fr  b1_fo  b2_fo  b3_fo
+cond        cls                                                 
+N09_M07_F10 healthy     4.1     3.9     4.8    2.3    2.9    3.0
+            inner      22.4     9.2    13.1    5.2    9.8    4.7
+            outer      12.6     7.2     9.5   77.4   28.4   26.3
+N15_M07_F10 healthy     6.6     4.8     4.8    4.0    6.0    3.9
+            inner      34.3    29.9    20.5    4.9    7.4    5.3
+            outer      16.3     9.1     7.9  113.1   45.5   33.1
+
+per outer/healthy bearing, 900 rpm: mean SNR at f_o (bands 1,2,3) / at 3fr
+         b1_fo  b2_fo  b3_fo  b1_3fr  b2_3fr  b3_3fr
+bearing                                             
+K001       2.6    3.0    2.3     2.4     2.5     3.4
+K002       2.3    2.4    3.1     3.5     3.5     4.4
+K003       2.1    1.7    2.4     2.7     2.5     2.9
+K004       2.0    2.3    3.5     5.8     5.4     7.1
+K005       2.8    5.1    4.0     5.6     5.6     6.0
+K006       2.1    2.9    2.5     4.6     3.7     5.4
+KA04     175.5   33.4   42.0    29.2     7.7     9.5
+KA15       3.1   10.3    3.5     6.9     5.5     9.1
+KA16     201.7   85.0   76.2    16.5     7.4    14.2
+KA22       2.9    2.9    4.4     6.8     6.8     9.9
+KA30       3.8   10.5    5.4     3.6     8.7     5.0
+KI04       2.9    2.8    2.6     6.8    10.6    13.3
+KI14       4.8   15.9    5.4    13.1     5.3     9.2
+KI16       7.8   26.4    4.7    41.5     8.4     9.3
+KI17       6.4    6.2    6.0    11.4     6.4     8.0
+KI18       6.4    4.3    5.9    52.7    13.8    23.0
+KI21       3.2    3.4    3.8     8.7    10.9    15.6
+
+inner race: mean SNR at f_i vs 5 f_r, by speed and class
+                     b1_fi  b2_fi  b3_fi  b1_5fr  b2_5fr  b3_5fr
+cond        cls                                                 
+N09_M07_F10 healthy    2.0    1.9    2.0     2.3     2.5     2.7
+            inner     17.4    7.0    6.7    11.2     5.7     4.7
+            outer      1.8    3.6    3.0     2.7     4.4     3.9
+N15_M07_F10 healthy    2.4    3.6    3.1     4.1     3.3     3.8
+            inner     16.8   15.8    8.1    14.7    13.8     9.9
+            outer      2.3    8.5    4.6     7.0     6.3     5.9

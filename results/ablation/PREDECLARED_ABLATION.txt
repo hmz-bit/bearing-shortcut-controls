@@ -1,0 +1,20 @@
+PREDECLARED: component ablation of the variant rowz_drop (row z-score plus dropout 0.3). Written before any run of the two ablation variants on any dataset. Not to be changed afterwards; later changes go in dated ADDENDA.
+
+Why: an independent critical review of the manuscript (finding F-02) pointed out that rowz_drop combines two changes (a per-window row z-score of the order tensor and dropout with probability 0.3 on the 96-dimensional embedding), that both were introduced together, and that the variants rowz (row z-score only) and base_drop (dropout only) were run on the development set only (as tuning-split variants), never on the external datasets. The contrast rowz_drop minus base therefore cannot be attributed to either component. This ablation separates them. It is descriptive and was designed after earlier results existed.
+
+Variants (frozen, as defined in scripts/phase2/variants.py; no tuning on any data):
+  rowz       = row z-score only (options rowz=True), no dropout
+  base_drop  = dropout 0.3 only, no row transform
+  Reference results already on file: base and rowz_drop.
+Configuration: Adam, lr 1e-3, batch 64, weight decay 1e-4, 40 epochs, standardiser on training windows only; seed = split index exactly as for the other variants of each dataset.
+
+Analyses (each uses the same splits, labels and code path as the corresponding run of base and rowz_drop):
+  A1 UORED-VAFCLS: the 100 splits (scripts/uored/run_uored.py), all-negatives task; report macro and per-label AUROC and the outer-label AUROC under negative sets E1 (all), E3 (same bearing model) and E4 (faulty stage) as in audit round 3.
+  A2 CWRU: the 100 (run, scenario) splits (scripts/cwru/run_cwru.py), report the original macro and the channel-matched macro.
+  A3 XJTU-SY and Paderborn run-to-failure, stage-free fault-type setting (scripts/audit/audit3_jk.py K): the same splits and skip rule as in audit round 3.
+  The development set (PU) is NOT run (no further analysis on its evaluation splits).
+Intervals: paired bearing-level cluster bootstrap as in the other analyses (B = 2000, seed 20261029) for rowz minus base, base_drop minus base, rowz_drop minus rowz, rowz_drop minus base_drop. All intervals are descriptive and unadjusted.
+
+Prediction written in advance: none for the direction of either component. A reading rule written in advance: if rowz_drop minus base is mostly reproduced by one component alone (point estimate of that component's contrast at least 70 percent of the rowz_drop contrast and the other component's contrast below 30 percent), the manuscript attributes the effect to that component; otherwise it states that the two components cannot be separated.
+
+Outputs: results/ablation/ (summary and tables), predictions next to the existing prediction files of each dataset.

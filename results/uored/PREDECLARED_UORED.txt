@@ -1,0 +1,23 @@
+EXTERNAL VALIDATION ON UORED-VAFCLS (Mendeley y2px5tg92h v5, CC BY 4.0). Written before any model was trained on UORED. Not to be changed afterwards.
+
+Purpose: test, without any tuning, whether the PU results (LF-PNCN, and rowz_drop = V1 of phase 2) transfer to a different dataset. Nothing on UORED is used to choose or change a method.
+
+FROZEN (identical to PU): network (LF-PNCN, 22,947 params), optimiser and config of Tier 1 (lr 1e-3, batch 64, weight decay 1e-4, 40 epochs, constant lr), Ball output excluded from the loss, standardiser from training windows only, median/MAD log-SNR order tensor (3 bands 500-2500, 2500-5000, 5000-10000 Hz; 5 harmonics; 64 xi points; Delta rule), variant definitions base and rowz_drop (per-window row z-score + dropout 0.3) from scripts/phase2/variants.py, seed = split number.
+
+CHOSEN A PRIORI FOR UORED (same for both variants, declared here, not tuned):
+ 1. Signal: accelerometer column only, 42 kHz, no resampling (FS_TARGET is 42 kHz).
+ 2. Geometry: NSK 6203ZZ / FAFNIR 203KD per the data descriptor (Sehri et al. 2023): z = 8, d = 6.77 mm, D = 28.50 mm, contact angle 0.
+ 3. Shaft frequency: f_r = 29.75 Hz for ALL files. Reason: the recorded Speed column is a single value per file (1700 to 2190 rpm) and disagrees with the shaft line in the vibration spectrum for most files (results/uored/speed_check.txt); the shaft-line peak (20-40 Hz, label-free) has median 29.75 Hz over the 60 files. No labels and no model output were used.
+ 4. Windows: 1 s with 75% overlap (hop 0.25 s), 37 windows per 10 s file, because UORED has only 3 files per bearing. Overlap only inside one bearing; splits are by bearing.
+ 5. Labels: inner = recordings I_k_1, I_k_2; outer = O_k_1, O_k_2; every other recording (H, B, C) is negative for both labels. The physical bearing id k = 1..20 comes from the file name (I 1-5, O 6-10, B 11-15, C 16-20, matching Vieira et al., Table 2).
+ 6. Splits: the 100 evaluation splits of Vieira et al. for UORED (data/splits/uored-vafcls/eval/run_5..104, test_ids = 8 bearings, 2 per fault class), each run once per variant. Tuning splits are not used.
+
+MEASUREMENT: per split, window-pooled AUROC for the inner label and for the outer label, Macro = mean of the two (same as PU); mean over the 100 splits. Paired bearing-level stratified cluster bootstrap (B = 2000, resampling the 20 physical bearings within the 4 fault classes, weighted AUROC, 95% percentile interval). Descriptive: per-bearing outer-race AUROC (that bearing against all negatives of the splits where it is in the test set).
+
+PRE-STATED DECISION RULES (reported whatever the outcome):
+ U1 (transfer, no overfitting to PU): each variant's Macro-AUROC bootstrap lower bound > 50.
+ U2 (the PU gain replicates): rowz_drop minus base confirmed if the difference > 0 and the 95% CI lower bound > 0; inconclusive if the point estimate >= 0 and the CI includes 0; not reproduced if the point estimate < 0.
+ U3 (outer race): descriptive only, no threshold; if outer AUROC is high on most UORED outer bearings, the weak PU bearings are PU-specific; if low, the weakness is not specific to PU.
+ No variant is added, removed or retuned after seeing results. If a pipeline error is found, it is fixed and ALL results rerun and both versions are reported.
+
+CAVEATS stated in advance: single operating condition; each physical bearing contributes healthy and two fault-severity recordings (kept together in one side of every split); whether the UORED faults are artificial or naturally developed is not established from the sources I read; B1 (WDCNN) is not run on UORED; results are not comparable with Vieira's UORED numbers (their label set and features differ).

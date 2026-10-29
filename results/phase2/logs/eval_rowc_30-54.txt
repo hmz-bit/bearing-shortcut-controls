@@ -1,0 +1,26 @@
+rowc split 30: macro 84.82 (in 99.1 out 70.5) 103.8s elapsed 109s
+rowc split 31: macro 90.24 (in 94.2 out 86.3) 86.0s elapsed 196s
+rowc split 32: macro 91.70 (in 98.4 out 85.1) 87.2s elapsed 284s
+rowc split 33: macro 82.52 (in 99.4 out 65.7) 86.4s elapsed 371s
+rowc split 34: macro 93.68 (in 97.5 out 89.9) 90.1s elapsed 463s
+rowc split 35: macro 57.76 (in 80.5 out 35.0) 90.2s elapsed 554s
+rowc split 36: macro 94.67 (in 98.7 out 90.6) 91.9s elapsed 647s
+rowc split 37: macro 77.53 (in 94.9 out 60.2) 91.4s elapsed 739s
+rowc split 38: macro 86.27 (in 100.0 out 72.5) 88.6s elapsed 829s
+rowc split 39: macro 86.46 (in 95.9 out 77.1) 90.4s elapsed 920s
+rowc split 40: macro 92.83 (in 99.9 out 85.8) 88.7s elapsed 1010s
+rowc split 41: macro 93.04 (in 99.0 out 87.0) 89.9s elapsed 1101s
+rowc split 42: macro 99.12 (in 98.7 out 99.6) 87.6s elapsed 1190s
+rowc split 43: macro 97.13 (in 99.6 out 94.7) 91.4s elapsed 1282s
+rowc split 44: macro 86.71 (in 100.0 out 73.4) 87.9s elapsed 1371s
+rowc split 45: macro 91.22 (in 97.7 out 84.8) 88.1s elapsed 1460s
+rowc split 46: macro 94.21 (in 97.6 out 90.8) 87.9s elapsed 1549s
+rowc split 47: macro 94.89 (in 99.8 out 90.0) 88.9s elapsed 1639s
+rowc split 48: macro 75.06 (in 97.0 out 53.1) 91.3s elapsed 1732s
+rowc split 49: macro 87.82 (in 97.5 out 78.2) 88.2s elapsed 1821s
+rowc split 50: macro 85.37 (in 91.5 out 79.2) 87.6s elapsed 1910s
+rowc split 51: macro 90.12 (in 97.6 out 82.6) 86.5s elapsed 1997s
+rowc split 52: macro 92.91 (in 96.3 out 89.5) 89.9s elapsed 2088s
+rowc split 53: macro 95.63 (in 98.3 out 92.9) 90.2s elapsed 2179s
+rowc split 54: macro 92.85 (in 94.7 out 90.9) 85.8s elapsed 2266s
+DONE rowc_r30-54: macro 88.58

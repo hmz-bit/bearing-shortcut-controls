@@ -1,0 +1,12 @@
+{
+ "n_splits": 6,
+ "total_train_seconds": 658.5,
+ "mean_seconds_per_split": 110.33333333333336,
+ "overlap_total": 0,
+ "mean_abs_diff": 4.606142113090047,
+ "mean_own": 84.9827207108517,
+ "mean_pub": 80.37657859776162,
+ "mean_signed_diff": 4.606142113090047,
+ "spearman": 0.942857142857143,
+ "pearson": 0.9172870304031664
+}

@@ -1,0 +1,42 @@
+uored: all five prediction sets have identical rows (88800) and keys ['split', 'bearing', 'y_inner', 'y_outer']
+tie-aware weighted AUROC fast path vs sklearn: 43 checks, max abs difference 1.11e-16
+== uored primary
+  base       macro 80.92 CI [71.15, 90.28] inner 98.74 outer 63.09 sd 7.08 valid 100
+  rowz_drop  macro 91.55 CI [86.16, 97.09] inner 98.22 outer 84.88 sd 4.92 valid 100
+  b1         macro 94.21 CI [90.47, 97.61] inner 98.56 outer 89.87 sd 5.61 valid 100
+  rf         macro 94.43 CI [90.20, 98.75] inner 97.23 outer 91.63 sd 4.29 valid 100
+  rfu        macro 94.46 CI [90.04, 98.56] inner 97.47 outer 91.46 sd 4.38 valid 100
+  rowz_drop_minus_rf_macro           -2.88 [-6.74, +0.55]
+  base_minus_rf_macro                -13.51 [-21.28, -5.36]
+  b1_minus_rf_macro                  -0.22 [-4.26, +3.55]
+  rowz_drop_minus_rfu_macro          -2.91 [-5.69, -0.43]
+  base_minus_rfu_macro               -13.55 [-21.34, -6.60]
+  b1_minus_rfu_macro                 -0.25 [-3.47, +3.23]
+  rf_minus_rfu_macro                 -0.03 [-1.62, +1.74]
+  rowz_drop_minus_base_macro         +10.64 [+5.20, +17.35]
+  rowz_drop_minus_b1_macro           -2.66 [-6.21, +0.29]
+  base_minus_b1_macro                -13.30 [-21.54, -6.68]
+decisions {
+ "R1_rf": "met",
+ "R1_rfu": "met",
+ "R2_rowz_drop_minus_rf": "NOT SUPPORTED; +6 not met",
+ "R2_rowz_drop_minus_rfu": "NOT SUPPORTED; RFU significantly ahead; +6 not met",
+ "R2_base_minus_rf": "NOT SUPPORTED; RF significantly ahead",
+ "R2_base_minus_rfu": "NOT SUPPORTED; RFU significantly ahead",
+ "R2_b1_minus_rf": "NOT SUPPORTED",
+ "R2_b1_minus_rfu": "NOT SUPPORTED",
+ "R3_rowz_drop_not_losing_to_rf": "FAILS (point estimate below RF)",
+ "R3_rowz_drop_not_losing_to_rfu": "FAILS (point estimate below RF)"
+}
+model                           b1   base    rf   rfu  rowz_drop
+label bearing negatives                                         
+inner 1       all_negatives   93.8   94.9  95.0  95.3       96.0
+      2       all_negatives   99.6   98.8  96.0  96.8       95.9
+      3       all_negatives  100.0   99.9  96.6  96.5       99.9
+      4       all_negatives   99.9  100.0  99.8  99.8      100.0
+      5       all_negatives   99.0  100.0  99.2  99.3       99.3
+outer 6       all_negatives   93.3   55.7  99.7  98.9       92.0
+      7       all_negatives   93.2   55.9  81.6  89.4       83.3
+      8       all_negatives   67.6   23.3  77.3  69.1       53.1
+      9       all_negatives   95.7   99.9  99.0  98.5       99.1
+      10      all_negatives   97.5   85.1  99.4  98.4       93.3

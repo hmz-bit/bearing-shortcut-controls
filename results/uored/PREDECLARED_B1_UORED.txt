@@ -1,0 +1,15 @@
+B1 (WDCNN on the fixed-Hz envelope spectrum) ON UORED-VAFCLS. Written before any B1 model was trained on UORED. Not to be changed afterwards.
+
+Purpose: second dataset for hypothesis H2 (LF-PNCN family versus B1). Same data, labels, windows, splits and scoring windows as the LF-PNCN runs in PREDECLARED_UORED.txt.
+
+B1 recipe taken from Vieira et al.'s configs as TEXT (never executed): configs/experiment/ottawa/eval_envelope.yaml plus the default model WDCNN (configs/train.yaml: modelmodule multilabel_wdcnn):
+  - WDCNN (own implementation work/scripts/b1/wdcnn.py, n_in 21000) with 4 outputs [inner, outer, ball, cage] (num_class 4), BCE-with-logits on all 4 labels; scored columns inner and outer.
+  - envelope spectrum: band-pass 500-10000 Hz order 12, |Hilbert|, mean removed, one-sided |FFT|/n (work/scripts/b1/envspec.py), 1-s window = 42000 samples -> 21000 bins.
+  - training: Adam lr 1e-4, batch 16, 30 epochs, drop_last, last epoch used, no validation; per epoch every training file is drawn dataset_multiplier = 20 times, each draw = one random 1-s crop + scalar gain |N(1, 0.3)|; global normalisation = division by the std of the concatenated raw training signals; seed = split number.
+DEVIATIONS (declared in advance, because recomputing a 12th-order filtered envelope for ~21,600 random crops per split would take hours on CPU):
+  1. Random crop start positions are restricted to the 0.25-s grid of the 37 windows per file (the same windows the LF-PNCN uses); the envelope spectrum bank for all 2220 windows is precomputed once (stored as float16 x 1000, as in the PU B1).
+  2. The std for normalisation is computed from the raw accelerometer samples of the training files (per-file n, sum, sum of squares).
+  3. Scoring: all 37 windows of each test file, i.e. the same rows as the LF-PNCN predictions (cache order), so the comparison is paired window by window.
+SPLITS AND METRIC: Vieira's UORED evaluation splits run_5..104, each once; analysis as in PREDECLARED_UORED.txt (paired stratified bearing-level cluster bootstrap, B = 2000).
+PRE-STATED DECISION RULES (reported whatever the outcome): for each of rowz_drop and base versus B1 (Macro-AUROC): supported if the difference is > 0 and the 95% CI lower bound > 0; inconclusive if the point estimate >= 0 and the CI includes 0; not supported if the point estimate < 0. The literal H2 threshold (>= +6 points) is additionally reported as met or not met on the point estimate. No hyperparameter of B1 or of the LF-PNCN family is changed after seeing results.
+CAVEATS: the ottawa recipe of Vieira et al. may have been tuned by them on UORED tuning splits (this favours B1); my deviation 1 reduces crop diversity (this may disadvantage B1); B1 is an own re-implementation (on PU it was about 3 points above the published values on 6 validation splits).

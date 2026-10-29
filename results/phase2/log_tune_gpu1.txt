@@ -1,0 +1,36 @@
+rowc s0 split 0: macro 91.04 in 98.7 out 83.4 20s
+rowc s0 split 1: macro 91.41 in 99.1 out 83.7 15s
+rowc s0 split 2: macro 92.63 in 100.0 out 85.3 14s
+rowc s0 split 3: macro 90.65 in 96.1 out 85.2 13s
+rowc s0 split 4: macro 96.24 in 98.1 out 94.4 12s
+== rowc seed0: val macro 92.39  inner 98.39  outer 86.40  per split [91.0, 91.4, 92.6, 90.7, 96.2]
+cpw1 s0 split 0: macro 76.44 in 85.1 out 67.8 20s
+cpw1 s0 split 1: macro 76.98 in 83.9 out 70.0 24s
+cpw1 s0 split 2: macro 86.25 in 91.2 out 81.3 15s
+cpw1 s0 split 3: macro 83.73 in 94.3 out 73.2 20s
+cpw1 s0 split 4: macro 92.43 in 90.8 out 94.1 34s
+== cpw1 seed0: val macro 83.17  inner 89.06  outer 77.28  per split [76.4, 77.0, 86.2, 83.7, 92.4]
+ML14 s0 split 0: macro 81.16 in 87.5 out 74.8 22s
+ML14 s0 split 1: macro 84.67 in 86.9 out 82.5 12s
+ML14 s0 split 2: macro 82.19 in 92.1 out 72.3 17s
+ML14 s0 split 3: macro 76.45 in 80.1 out 72.8 17s
+ML14 s0 split 4: macro 93.58 in 92.3 out 94.8 16s
+== ML14 seed0: val macro 83.61  inner 87.79  outer 79.43  per split [81.2, 84.7, 82.2, 76.5, 93.6]
+L4 s0 split 0: macro 85.56 in 89.7 out 81.4 17s
+L4 s0 split 1: macro 86.78 in 90.1 out 83.4 17s
+L4 s0 split 2: macro 80.97 in 89.4 out 72.6 17s
+L4 s0 split 3: macro 75.53 in 79.4 out 71.7 18s
+L4 s0 split 4: macro 94.49 in 92.8 out 96.2 15s
+== L4 seed0: val macro 84.67  inner 88.28  outer 81.06  per split [85.6, 86.8, 81.0, 75.5, 94.5]
+b6 s0 split 0: macro 92.40 in 95.8 out 89.0 16s
+b6 s0 split 1: macro 85.64 in 93.0 out 78.3 17s
+b6 s0 split 2: macro 92.47 in 99.2 out 85.8 18s
+b6 s0 split 3: macro 92.17 in 95.8 out 88.5 18s
+b6 s0 split 4: macro 90.20 in 89.3 out 91.1 17s
+== b6 seed0: val macro 90.58  inner 94.61  outer 86.54  per split [92.4, 85.6, 92.5, 92.2, 90.2]
+aug s0 split 0: macro 94.42 in 96.2 out 92.6 18s
+aug s0 split 1: macro 96.34 in 97.6 out 95.1 19s
+aug s0 split 2: macro 87.26 in 95.8 out 78.8 18s
+aug s0 split 3: macro 80.12 in 86.0 out 74.2 19s
+aug s0 split 4: macro 93.40 in 93.6 out 93.2 18s
+== aug seed0: val macro 90.31  inner 93.85  outer 86.76  per split [94.4, 96.3, 87.3, 80.1, 93.4]

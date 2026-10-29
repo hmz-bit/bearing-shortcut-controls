@@ -1,0 +1,26 @@
+T3 rowz_drop split 80: 1500 89.3 | 900 70.1 24s elapsed 31s
+T3 rowz_drop split 81: 1500 83.7 | 900 84.9 25s elapsed 57s
+T3 rowz_drop split 82: 1500 82.7 | 900 68.5 25s elapsed 82s
+T3 rowz_drop split 83: 1500 94.4 | 900 81.1 26s elapsed 108s
+T3 rowz_drop split 84: 1500 82.2 | 900 70.9 26s elapsed 135s
+T3 rowz_drop split 85: 1500 89.3 | 900 77.9 26s elapsed 162s
+T3 rowz_drop split 86: 1500 93.0 | 900 88.8 26s elapsed 189s
+T3 rowz_drop split 87: 1500 95.3 | 900 94.1 25s elapsed 215s
+T3 rowz_drop split 88: 1500 69.7 | 900 71.3 25s elapsed 241s
+T3 rowz_drop split 89: 1500 96.2 | 900 94.6 25s elapsed 266s
+T3 rowz_drop split 90: 1500 73.6 | 900 62.1 25s elapsed 292s
+T3 rowz_drop split 91: 1500 82.9 | 900 60.2 25s elapsed 317s
+T3 rowz_drop split 92: 1500 73.2 | 900 73.8 25s elapsed 343s
+T3 rowz_drop split 93: 1500 69.1 | 900 63.8 24s elapsed 368s
+T3 rowz_drop split 94: 1500 83.8 | 900 76.3 25s elapsed 394s
+T3 rowz_drop split 95: 1500 95.6 | 900 85.8 25s elapsed 420s
+T3 rowz_drop split 96: 1500 88.1 | 900 88.5 27s elapsed 448s
+T3 rowz_drop split 97: 1500 97.4 | 900 94.5 26s elapsed 475s
+T3 rowz_drop split 98: 1500 92.2 | 900 86.1 25s elapsed 501s
+T3 rowz_drop split 99: 1500 90.9 | 900 88.0 25s elapsed 526s
+T3 rowz_drop split 100: 1500 94.7 | 900 93.0 24s elapsed 551s
+T3 rowz_drop split 101: 1500 90.5 | 900 78.6 26s elapsed 577s
+T3 rowz_drop split 102: 1500 91.3 | 900 82.0 26s elapsed 603s
+T3 rowz_drop split 103: 1500 96.5 | 900 93.1 26s elapsed 630s
+T3 rowz_drop split 104: 1500 86.2 | 900 73.4 26s elapsed 657s
+DONE 657

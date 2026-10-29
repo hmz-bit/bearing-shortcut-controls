@@ -1,0 +1,2 @@
+UORED stage-only reference: inner 70.0 outer 70.0 macro 70.0 (100 splits)
+Paderborn run-to-failure stage-only reference: inner 88.6 outer 79.5 macro 84.1 (100 splits)

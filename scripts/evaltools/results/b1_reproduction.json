@@ -1,0 +1,44 @@
+{
+ "n_runs": 100,
+ "macro_mean": 79.58332774843045,
+ "macro_std_pop": 12.960037148493855,
+ "macro_std_sample": 13.025327421400492,
+ "auroc_inner": 0.8987039558824895,
+ "auroc_outer": 0.6929625990861196,
+ "published": {
+  "macro_mean": 79.56,
+  "macro_std": 13.07,
+  "fpr90_inner": 24.0,
+  "fpr90_outer": 60.15
+ },
+ "fpr90": {
+  "horizontal": {
+   "inner": 24.001906075434032,
+   "outer": 60.154473989537415
+  },
+  "horizontal_interp": {
+   "inner": 24.002533526800395,
+   "outer": 60.154473989537415
+  },
+  "per_run_nearest": {
+   "inner": 23.816797477382305,
+   "outer": 60.002590700709526
+  },
+  "per_run_interp": {
+   "inner": 24.00818058909772,
+   "outer": 60.154473989537415
+  },
+  "per_run_first": {
+   "inner": 24.001906075434047,
+   "outer": 60.154473989537415
+  },
+  "vertical": {
+   "inner": 37.99379937993799,
+   "outer": 72.15721572157216
+  },
+  "pooled": {
+   "inner": 33.06666666666666,
+   "outer": 74.09559762219907
+  }
+ }
+}

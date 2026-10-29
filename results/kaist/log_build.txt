@@ -1,0 +1,19 @@
+built 0Nm_BPFI_03.mat 237
+built 0Nm_BPFI_10.mat 474
+built 0Nm_BPFI_30.mat 711
+built 0Nm_BPFO_03.mat 948
+built 0Nm_BPFO_10.mat 1185
+built 0Nm_BPFO_30.mat 1422
+built 2Nm_BPFI_03.mat 1659
+built 2Nm_BPFI_10.mat 1896
+built 2Nm_BPFI_30.mat 2133
+built 2Nm_BPFO_03.mat 2370
+built 2Nm_BPFO_10.mat 2607
+built 2Nm_BPFO_30.mat 2844
+built 4Nm_BPFI_03.mat 3081
+built 4Nm_BPFI_10.mat 3318
+built 4Nm_BPFI_30.mat 3555
+built 4Nm_BPFO_03.mat 3792
+built 4Nm_BPFO_10.mat 4029
+built 4Nm_BPFO_30.mat 4266
+saved data\kaist\kaist_windows.npz (4266, 2)

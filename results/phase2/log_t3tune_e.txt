@@ -1,0 +1,6 @@
+T3tune rowz_b6_drop s0 split 0: 1500 90.9 (out 82.8) | 900 84.4 (in 88.0 out 80.8)
+T3tune rowz_b6_drop s0 split 1: 1500 94.2 (out 88.5) | 900 86.6 (in 87.1 out 86.1)
+T3tune rowz_b6_drop s0 split 2: 1500 93.3 (out 86.5) | 900 83.9 (in 98.7 out 69.1)
+T3tune rowz_b6_drop s0 split 3: 1500 88.4 (out 78.3) | 900 70.7 (in 83.9 out 57.4)
+T3tune rowz_b6_drop s0 split 4: 1500 95.6 (out 94.7) | 900 77.4 (in 72.1 out 82.8)
+== T3tune rowz_b6_drop seed0: 1500 macro 92.46 | 900 macro 80.60 (inner 85.97, outer 75.22) | loss 11.86

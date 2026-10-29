@@ -1,0 +1,43 @@
+PREDECLARED: second audit round, evaluation-only (no model is trained or tuned on any bearing, except the trivial metadata classifier of part C and the 3-epoch invariance test of part D).
+Written before any number of parts A to D was computed. Not to be changed afterwards. Source of the questions: an internal audit plan, items S4, S6, S9 and rule 2 of its protocol section.
+All analyses are DESCRIPTIVE (no decision rule except where a threshold is written below). All results are reported, including unexpected ones.
+
+Inputs (read-only): existing prediction files of the frozen models (base = LF-PNCN, rowz_drop, B1, RF with its primary setting "rf") on the existing splits.
+  PU      base results/tier1/lfpncn_predictions_long.parquet; rowz_drop results/phase2/eval/rowz_drop_r5-104_predictions_long.parquet; B1 results/b1/val_predictions_long.parquet
+  UORED   results/uored/pred_{base,rowz_drop,b1}.parquet, results/rf/pred_uored_rf.parquet
+  CWRU    results/cwru/pred_{base,rowz_drop}_r*.parquet (concatenated), pred_b1_r3-52.parquet, results/rf/pred_cwru_rf.parquet
+  XJTU-SY results/xjtu/pred_{base,rowz_drop}_r*.parquet (excluding sens5 and perm), pred_b1_r5-104.parquet, results/rf/pred_xjtu_rf.parquet
+  Paderborn run-to-failure (RTF) results/rtf/pred_{base,rowz_drop}_r*.parquet (excluding perm), pred_b1_r5-104.parquet, results/rf/pred_rtf_rf.parquet
+Sanity rule: before anything else, the window-level mean Macro-AUROC over splits of every model/dataset is recomputed; a deviation of more than 0.05 points from the value in results/CROSS_DATASET_SUMMARY.md or results/rf/SUMMARY.md is reported and stops that dataset's analysis until explained.
+
+PART A (item S4): healthy-only negatives, window level, for PU, UORED, CWRU.
+  A1. For each split and each label (inner, outer) AUROC with positives = windows with that label and negatives = windows of HEALTHY bearings only (PU: bearings K00x; UORED: cls H; CWRU: healthy column True). Macro = mean of the two labels; splits where either class is empty are skipped (count reported). Mean over splits. Models as above.
+  A2. UORED only: same as A1 but positives restricted to state 2 (the faulty stage defined by the dataset authors).
+  Intervals: paired bearing-level cluster bootstrap, B = 2000, seed 20261029, for the differences rowz_drop - base, rowz_drop - B1, rowz_drop - RF (where RF exists), resampling physical bearings (CWRU: fault configuration groups for faulty, healthy-recording units for healthy).
+  Reading rule written in advance: if the ordering of the models changes between the original and the healthy-only version, this is reported as a task-definition effect, not as an error of either.
+
+PART B (item S9): unit-level (bearing-level) evaluation, all five datasets.
+  Unit = the smallest set of windows with a constant label: PU bearing; UORED bearing; CWRU column `unit` (healthy windows have their own units); XJTU-SY and RTF (bearing, stage) pair, cluster = bearing.
+  Unit score = mean of the window logits of that unit within the split. Per split and label: AUROC over units (ties half credit), Macro over the two labels, mean over splits where both classes exist.
+  Intervals: paired cluster bootstrap over bearings (B = 2000, seed 20261029) for the same three differences.
+  For the run-to-failure sets the unit-level result is still confounded by life stage (healthy-stage units versus faulty-stage units); it is reported for completeness and labelled so.
+
+PART C (item S6): metadata-only control, same bearing-wise splits as the existing runs.
+  Classifier: sklearn RandomForestClassifier, n_estimators 200, max_features sqrt, random_state 42, MultiOutput over [inner, outer], no tuning. Same train/test windows as the existing split generators of scripts/rf/run_rf.py (XJTU-SY, RTF, UORED, CWRU) and the Vieira split files for PU.
+  Features (only quantities that are not fault physics and are in the existing caches):
+    XJTU-SY: condition id, DC offset raw_sum/raw_n, record length raw_n.   Excluded on purpose: fileno, N_files (life position; covered by the stage-only reference).
+    RTF:     set speed f_r, DC offset raw_sum/raw_n, record length raw_n.   Excluded: M (life position).
+    UORED:   DC offset from results-side file statistics (data/uored/b1_file_stats.csv, raw_sum/n_raw), record length n_raw.   Excluded: state (life stage).
+    CWRU:    load, sensor location code (DE = 0, FE = 1).
+    PU:      speed, load torque and radial force parsed from the condition code (N15_M07_F10 etc.).
+  Not included: RMS and other amplitude statistics (they carry fault information; the time-statistics diagnostic is already a post hoc result in results/rf/SUMMARY.md).
+  Output: Macro-AUROC mean over splits per dataset. Threshold written in advance: a mean above 56 (the threshold used for the earlier permutation control) is reported as a possible metadata shortcut of the dataset protocol; a mean below 56 is reported as no sign of one. Limitation stated in advance: only the metadata that is stored in the caches is tested; file order and recording date are not tested.
+
+PART D (rule 2 of the plan, test-invariance fingerprint).
+  On PU tuning split 0 (never an evaluation split), train the phase 2 trainer (scripts/phase2/trainer.py train_eval) for 3 epochs on CPU with 1 thread, seed 0, variant rowz_drop options, three times: (i) held-out = the real validation bearings; (ii) held-out windows replaced by Gaussian noise through test_X; (iii) held-out = a single different bearing not in the training set. The SHA-256 of the concatenated model parameters after training must be identical across the three runs. Any difference is reported as a shared-state path from held-out data into training.
+
+Reporting: results/audit2/SUMMARY.md with all tables; scripts in scripts/audit/ (audit2_*.py); logs next to the results. No existing file is modified.
+
+ADDENDUM 1 (written after the first run of parts A and B, before any PU result was computed): the sanity rule stopped the PU analysis because results/b1/val_predictions_long.parquet holds only 6 splits (84.98), not the 100-split B1 (79.58). The correct input is results/../scripts/evaltools/results/b1_predictions_long.parquet (Vieira et al.'s released test logits converted by pu_data.logits_to_long; 79.58 reproduced in scripts/evaltools/README.md). Only this path changes; nothing else. The other four datasets passed the sanity rule on the first run and their results were already computed with the declared inputs.
+
+ADDENDUM 2 (written after the second run; no UORED unit-level number had been produced, the table was empty): in UORED every bearing 1 to 20 contributes windows of state 0 (cls H, label 0 for both labels) AND windows of states 1 and 2 (cls I, O, B or C of that bearing). The label is therefore not constant per bearing. Part B follows its own principle "unit = smallest set of windows with a constant label": UORED unit = (bearing, cls), cluster = bearing. The declared sentence "UORED bearing" is replaced by this. Consequence for the interpretation of part A: the 740 "healthy" windows are the early-life windows (state 0) of the 20 bearings, not separate healthy bearings; "healthy-only negatives" therefore means "early-life negatives". Part A numbers are unchanged by this correction (window level, filter = cls H).

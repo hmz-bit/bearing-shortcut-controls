@@ -1,0 +1,73 @@
+=== rowc_s0: share of windows above the 90%-TPR threshold of the OUTER head, by bearing (all 5 tuning splits pooled) ===
+            n  alarm_rate  mean_logit  n_splits      cls
+bearing                                                 
+K005      320       0.909      -5.209         1  healthy
+K002      638       0.890      -0.481         2  healthy
+K004      320       0.638      -3.995         1  healthy
+K006      960       0.202     -10.122         3  healthy
+K003      960       0.154     -11.163         3  healthy
+KI21      318       0.774      -7.483         1    inner
+KI14      320       0.556      -4.752         1    inner
+KI17      638       0.356      -6.717         2    inner
+KI16      320       0.322      -6.424         1    inner
+KI18      638       0.055     -12.199         2    inner
+KI04      960       0.027     -13.457         3    inner
+KA16      640       1.000       7.537         2    outer
+KA04      320       0.997       6.378         1    outer
+KA22      317       0.902      -5.901         1    outer
+KA30      320       0.850      -5.977         1    outer
+KA15     1590       0.849      -3.846         5    outer
+
+=== OUTER head alarm rate (at 90% TPR) by class, per split ===
+cls    healthy  inner  outer
+split                       
+0         0.72   0.30    0.9
+1         0.59   0.23    0.9
+2         0.49   0.05    0.9
+3         0.33   0.41    0.9
+4         0.06   0.29    0.9
+
+=== negatives (healthy+inner) only: false-alarm rate of the outer head by operating condition and class ===
+cls          healthy  inner
+condition                  
+N09_M07_F10    0.518  0.315
+N15_M01_F10    0.438  0.234
+N15_M07_F04    0.410  0.240
+N15_M07_F10    0.392  0.231
+
+=== positives (outer): detection rate by bearing and condition (TPR at the split threshold) ===
+condition  N09_M07_F10  N15_M01_F10  N15_M07_F04  N15_M07_F10
+bearing                                                      
+KA04              0.99         1.00         1.00         1.00
+KA15              0.93         0.78         0.88         0.81
+KA16              1.00         1.00         1.00         1.00
+KA22              0.84         0.92         0.91         0.94
+KA30              0.76         0.98         0.78         0.89
+
+=== within-split AUROC of the outer head, outer bearing vs negatives, per outer bearing (pairwise) ===
+split       0     1     2     3     4
+bearing                              
+KA04      NaN   NaN   NaN   NaN  99.7
+KA15     67.8  71.5  88.3  83.7  89.0
+KA16     98.9  95.9   NaN   NaN   NaN
+KA22      NaN   NaN   NaN  86.8   NaN
+KA30      NaN   NaN  82.3   NaN   NaN
+
+=== the 10 healthy/inner bearing-condition cells with the highest outer alarm rate ===
+                      mean  size
+bearing condition               
+K005    N15_M01_F10  0.975    80
+K002    N09_M07_F10  0.969   160
+K005    N15_M07_F04  0.912    80
+        N15_M07_F10  0.912    80
+K002    N15_M01_F10  0.881   160
+KI21    N09_M07_F10  0.873    79
+K002    N15_M07_F10  0.869   160
+        N15_M07_F04  0.842   158
+K005    N09_M07_F10  0.838    80
+KI21    N15_M01_F10  0.838    80
+
+=== inner head, for comparison: alarm rate (90% TPR) on negatives by class ===
+cls
+healthy    0.008
+outer      0.084

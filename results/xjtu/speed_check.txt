@@ -1,0 +1,26 @@
+XJTU-SY label-free shaft-line check (Welch, 0.78 Hz resolution, +-5% window around the nominal frequency)
+snapshots checked: 1150
+
+condition 1 nominal 35.0 Hz: median peak 34.38 Hz (-1.79%), share within 2.5% of nominal 99%, median prominence 234227.2
+  rule (replace nominal by the folder median if |difference| > 2.5%): not triggered, nominal frequency is used
+condition 2 nominal 37.5 Hz: median peak 36.72 Hz (-2.08%), share within 2.5% of nominal 100%, median prominence 35259.8
+  rule (replace nominal by the folder median if |difference| > 2.5%): not triggered, nominal frequency is used
+condition 3 nominal 40.0 Hz: median peak 39.84 Hz (-0.39%), share within 2.5% of nominal 100%, median prominence 342757.1
+  rule (replace nominal by the folder median if |difference| > 2.5%): not triggered, nominal frequency is used
+
+per bearing (median peak Hz, share of snapshots with prominence > 5):
+  B1_1: nominal 35.0, median peak 34.38 Hz, healthy-stage 34.38, faulty-stage 34.38, share prominent 100%
+  B1_2: nominal 35.0, median peak 34.38 Hz, healthy-stage 34.38, faulty-stage 34.38, share prominent 100%
+  B1_3: nominal 35.0, median peak 34.38 Hz, healthy-stage 34.38, faulty-stage 34.38, share prominent 100%
+  B1_4: nominal 35.0, median peak 34.38 Hz, healthy-stage 34.38, faulty-stage 34.38, share prominent 100%
+  B1_5: nominal 35.0, median peak 34.38 Hz, healthy-stage 34.38, faulty-stage 34.38, share prominent 100%
+  B2_1: nominal 37.5, median peak 36.72 Hz, healthy-stage 36.72, faulty-stage 36.72, share prominent 100%
+  B2_2: nominal 37.5, median peak 36.72 Hz, healthy-stage 37.50, faulty-stage 36.72, share prominent 100%
+  B2_3: nominal 37.5, median peak 36.72 Hz, healthy-stage 36.72, faulty-stage 36.72, share prominent 100%
+  B2_4: nominal 37.5, median peak 36.72 Hz, healthy-stage 36.72, faulty-stage 36.72, share prominent 100%
+  B2_5: nominal 37.5, median peak 36.72 Hz, healthy-stage 36.72, faulty-stage 36.72, share prominent 100%
+  B3_1: nominal 40.0, median peak 39.84 Hz, healthy-stage 39.84, faulty-stage 39.84, share prominent 100%
+  B3_2: nominal 40.0, median peak 39.84 Hz, healthy-stage 39.84, faulty-stage 39.84, share prominent 100%
+  B3_3: nominal 40.0, median peak 39.84 Hz, healthy-stage 39.84, faulty-stage 39.84, share prominent 100%
+  B3_4: nominal 40.0, median peak 39.84 Hz, healthy-stage 39.84, faulty-stage 39.84, share prominent 100%
+  B3_5: nominal 40.0, median peak 39.84 Hz, healthy-stage 39.84, faulty-stage 39.84, share prominent 100%

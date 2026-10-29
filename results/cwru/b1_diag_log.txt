@@ -1,0 +1,11 @@
+median spectrum L2 norm by signal location / class:
+typ       B       H      IR      OR
+sig                                
+DE   0.1317  0.1560  0.3583  0.8517
+FE   0.1764  0.1088  0.2872  0.5409
+run 3 DE: loss ep1 0.389 ep10 0.020 ep30 0.022 | train AUROC in 100.0 out 100.0 | test in 78.9 out 16.6
+  mean outer-head logit on test windows by class: {'B': -8.9399995803833, 'H_FE': -10.850000381469727, 'IR': -8.020000457763672, 'OR': -12.510000228881836}
+run 3 FE: loss ep1 0.373 ep10 0.038 ep30 0.033 | train AUROC in 100.0 out 100.0 | test in 89.9 out 44.9
+  mean outer-head logit on test windows by class: {'B': -6.980000019073486, 'H_DE': -3.990000009536743, 'IR': -12.729999542236328, 'OR': -7.369999885559082}
+run 40 DE: loss ep1 0.447 ep10 0.034 ep30 0.007 | train AUROC in 100.0 out 100.0 | test in 86.7 out 63.0
+  mean outer-head logit on test windows by class: {'B': -7.510000228881836, 'H_FE': -5.039999961853027, 'IR': -4.239999771118164, 'OR': -1.4600000381469727}

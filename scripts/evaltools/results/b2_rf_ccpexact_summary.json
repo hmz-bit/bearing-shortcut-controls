@@ -1,0 +1,24 @@
+{
+ "tag": "b2_rf_ccpexact",
+ "params": {
+  "n_estimators": 200,
+  "max_features": "log2",
+  "criterion": "log_loss",
+  "max_depth": 24,
+  "min_samples_split": 15,
+  "min_samples_leaf": 18,
+  "ccp_alpha": 0.026475639105883027
+ },
+ "seed": 42,
+ "n_runs": 100,
+ "macro_mean": 69.72335571289062,
+ "macro_std_pop": 15.762314721085628,
+ "macro_std_sample": 15.841722350708018,
+ "auroc_inner": 0.8315409362792969,
+ "auroc_outer": 0.5629261779785156,
+ "published": {
+  "macro_mean": 69.76,
+  "macro_std": 15.72
+ },
+ "seconds": 111.34974527359009
+}

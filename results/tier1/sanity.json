@@ -1,0 +1,106 @@
+{
+ "config": {
+  "lr": 0.001,
+  "bs": 64,
+  "wd": 0.0001,
+  "epochs": 40,
+  "val_macro_mean": 89.57217728601478,
+  "selected_on": "5 tuning splits, variant t_mad"
+ },
+ "a_window_shuffle_split5": {
+  "macro": 52.04171811393511,
+  "inner": 61.540155711438295,
+  "outer": 42.54328051643192
+ },
+ "a_bearing_label_permutation_splits5_14": {
+  "macro_mean": 53.680149040263984,
+  "macro_sd": 22.632836112978353,
+  "values": [
+   58.16917224040752,
+   58.83863589850884,
+   34.956609886794446,
+   23.53691734766043,
+   35.87637731726401,
+   32.72742687513416,
+   75.93791725284144,
+   84.83612060546875,
+   85.71616638288396,
+   46.20614659567638
+  ]
+ },
+ "b_train_vs_test": [
+  {
+   "split": 5,
+   "train_macro": 99.99997952443451,
+   "train_inner": 100.0,
+   "train_outer": 99.99995904886903,
+   "test_macro": 81.87241845980758,
+   "test_inner": 88.22693785858229,
+   "test_outer": 75.51789906103285
+  },
+  {
+   "split": 6,
+   "train_macro": 100.0,
+   "train_inner": 100.0,
+   "train_outer": 100.0,
+   "test_macro": 96.32827814339318,
+   "test_inner": 99.65514832666057,
+   "test_outer": 93.00140796012577
+  },
+  {
+   "split": 7,
+   "train_macro": 100.0,
+   "train_inner": 100.0,
+   "train_outer": 100.0,
+   "test_macro": 76.02694510173869,
+   "test_inner": 88.93328623780299,
+   "test_outer": 63.12060396567439
+  },
+  {
+   "split": 8,
+   "train_macro": 100.0,
+   "train_inner": 100.0,
+   "train_outer": 100.0,
+   "test_macro": 89.15587683890942,
+   "test_inner": 92.07778213166145,
+   "test_outer": 86.23397154615739
+  },
+  {
+   "split": 9,
+   "train_macro": 100.0,
+   "train_inner": 100.0,
+   "train_outer": 100.0,
+   "test_macro": 94.47738222368764,
+   "test_inner": 97.59673823713233,
+   "test_outer": 91.35802621024295
+  }
+ ],
+ "c_split_overlaps_found": 0,
+ "c_prediction_frames": {
+  "lfpncn": {
+   "bad_splits": 0,
+   "n_splits": 100
+  },
+  "b4": {
+   "bad_splits": 0,
+   "n_splits": 100
+  },
+  "b3": {
+   "bad_splits": 0,
+   "n_splits": 100
+  }
+ },
+ "d_standardisation": {
+  "max_abs_diff_mean_vs_train_recompute": 6.043878741923692e-08,
+  "max_rel_diff_std_vs_train_recompute": 1.2715417480199366e-07,
+  "max_abs_diff_mean_vs_all_windows": 0.03843443505308353,
+  "stats_identical_when_test_windows_replaced_by_garbage": true,
+  "channels": 45
+ },
+ "e_train_seconds_per_split": {
+  "mean": 35.84802749633789,
+  "min": 16.662039279937744,
+  "max": 802.0060653686523,
+  "total": 3584.802749633789
+ }
+}

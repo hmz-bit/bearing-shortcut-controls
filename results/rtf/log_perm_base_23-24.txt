@@ -1,0 +1,5 @@
+base perm0 split 23: held 65.3 (IR 53.3 OR 77.3) train 100.0 t=50s
+base perm1 split 23: held 43.8 (IR 69.4 OR 18.2) train 100.0 t=95s
+base perm0 split 24: held 58.3 (IR 74.6 OR 42.1) train 100.0 t=143s
+base perm1 split 24: held 80.3 (IR 64.1 OR 96.5) train 100.0 t=191s
+DONE perm_base_r23-24

@@ -1,0 +1,33 @@
+== PU (Paderborn, 17 bearings of Vieira et al.)
+L1  PU: 100 eval + 5 tuning splits checked
+L3  PU: 100 distinct test sets among 100 eval splits (17 bearings in total, so the effective sample is the bearing, not the split)
+S1  PU: 16 of 17 bearings that appear as eval-test bearings were also validation bearings during tuning (K002, K003, K004, K005, K006, KA04, KA15, KA16, KA22, KA30, KI04, KI14, KI16, KI17, KI18, KI21)
+S1  PU: bearings never used as validation in the 5 tuning splits: K001
+    -> every PU bearing influenced design decisions; PU numbers are development-set numbers, not confirmatory evidence
+== UORED-VAFCLS
+L1  UORED: 100 eval splits checked
+    label table of WINDOWS (class H/I/O/B/C versus the two binary labels). Class H windows are the state-0 (early-life) windows of the SAME 20 bearings, not separate healthy bearings; other-fault windows count as negatives:
+label  inner=0 outer=0  inner=0 outer=1  inner=1 outer=0
+class                                                   
+B                  370                0                0
+C                  370                0                0
+H                  740                0                0
+I                    0                0              370
+O                    0              370                0
+== CWRU
+L2  CWRU: 100 train/test pairs checked, 0 violations
+    note: all CWRU configurations come from one test rig, one motor, one sensor mounting; rig identity cannot be split away
+== XJTU-SY
+L1  XJTU-SY: 100 splits checked
+L3  XJTU-SY: 100 distinct test sets
+    test-set frequency per bearing: min 25, max 43
+C1  XJTU-SY: 500/500 test-bearing instances have training bearings from the SAME operating condition (same nominal speed and load, same rig session type)
+C2  hold out condition 1: training bearings 10, inner-race and outer-race positives present in training: True
+C2  hold out condition 2: training bearings 10, inner-race and outer-race positives present in training: True
+C2  hold out condition 3: training bearings 10, inner-race and outer-race positives present in training: True
+== Paderborn run-to-failure
+L1  Paderborn run-to-failure: 100 splits checked
+L3  Paderborn run-to-failure: 100 distinct test sets
+    test-set frequency per bearing: min 27, max 45
+
+RESULT: 0 identity-level violations (none found)

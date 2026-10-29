@@ -1,0 +1,110 @@
+split 1 (BPFI_03 vs BPFO_03) base: macro 100.0 (inner 100.0 outer 100.0) t=15s
+split 1 (BPFI_03 vs BPFO_03) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=27s
+split 1 (BPFI_03 vs BPFO_03) rf: macro 100.0 (inner 100.0 outer 100.0) t=27s
+split 1 (BPFI_03 vs BPFO_03) rfu: macro 100.0 (inner 100.0 outer 100.0) t=28s
+split 1 (BPFI_03 vs BPFO_03) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=28s
+split 1 (BPFI_03 vs BPFO_03) ref_amplitude: macro 100.0 (inner 100.0 outer 100.0) t=29s
+split 2 (BPFI_03 vs BPFO_10) base: macro 100.0 (inner 100.0 outer 100.0) t=40s
+split 2 (BPFI_03 vs BPFO_10) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=51s
+split 2 (BPFI_03 vs BPFO_10) rf: macro 100.0 (inner 100.0 outer 100.0) t=52s
+split 2 (BPFI_03 vs BPFO_10) rfu: macro 100.0 (inner 100.0 outer 100.0) t=52s
+split 2 (BPFI_03 vs BPFO_10) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=53s
+split 2 (BPFI_03 vs BPFO_10) ref_amplitude: macro 100.0 (inner 100.0 outer 100.0) t=53s
+split 3 (BPFI_03 vs BPFO_30) base: macro 100.0 (inner 100.0 outer 100.0) t=67s
+split 3 (BPFI_03 vs BPFO_30) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=79s
+split 3 (BPFI_03 vs BPFO_30) rf: macro 100.0 (inner 100.0 outer 100.0) t=80s
+split 3 (BPFI_03 vs BPFO_30) rfu: macro 100.0 (inner 100.0 outer 100.0) t=81s
+split 3 (BPFI_03 vs BPFO_30) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=81s
+split 3 (BPFI_03 vs BPFO_30) ref_amplitude: macro 100.0 (inner 100.0 outer 100.0) t=82s
+split 4 (BPFI_10 vs BPFO_03) base: macro 100.0 (inner 100.0 outer 100.0) t=93s
+split 4 (BPFI_10 vs BPFO_03) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=104s
+split 4 (BPFI_10 vs BPFO_03) rf: macro 100.0 (inner 100.0 outer 100.0) t=105s
+split 4 (BPFI_10 vs BPFO_03) rfu: macro 100.0 (inner 100.0 outer 100.0) t=106s
+split 4 (BPFI_10 vs BPFO_03) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=106s
+split 4 (BPFI_10 vs BPFO_03) ref_amplitude: macro 82.4 (inner 82.4 outer 82.4) t=107s
+split 5 (BPFI_10 vs BPFO_10) base: macro 100.0 (inner 100.0 outer 100.0) t=118s
+split 5 (BPFI_10 vs BPFO_10) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=130s
+split 5 (BPFI_10 vs BPFO_10) rf: macro 100.0 (inner 100.0 outer 100.0) t=130s
+split 5 (BPFI_10 vs BPFO_10) rfu: macro 100.0 (inner 100.0 outer 100.0) t=131s
+split 5 (BPFI_10 vs BPFO_10) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=132s
+split 5 (BPFI_10 vs BPFO_10) ref_amplitude: macro 100.0 (inner 100.0 outer 100.0) t=133s
+split 6 (BPFI_10 vs BPFO_30) base: macro 100.0 (inner 100.0 outer 100.0) t=144s
+split 6 (BPFI_10 vs BPFO_30) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=156s
+split 6 (BPFI_10 vs BPFO_30) rf: macro 100.0 (inner 100.0 outer 100.0) t=157s
+split 6 (BPFI_10 vs BPFO_30) rfu: macro 100.0 (inner 100.0 outer 100.0) t=158s
+split 6 (BPFI_10 vs BPFO_30) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=158s
+split 6 (BPFI_10 vs BPFO_30) ref_amplitude: macro 77.1 (inner 77.1 outer 77.1) t=159s
+split 7 (BPFI_30 vs BPFO_03) base: macro 100.0 (inner 100.0 outer 100.0) t=173s
+split 7 (BPFI_30 vs BPFO_03) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=185s
+split 7 (BPFI_30 vs BPFO_03) rf: macro 100.0 (inner 100.0 outer 100.0) t=185s
+split 7 (BPFI_30 vs BPFO_03) rfu: macro 100.0 (inner 100.0 outer 100.0) t=186s
+split 7 (BPFI_30 vs BPFO_03) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=187s
+split 7 (BPFI_30 vs BPFO_03) ref_amplitude: macro 100.0 (inner 100.0 outer 100.0) t=187s
+split 8 (BPFI_30 vs BPFO_10) base: macro 100.0 (inner 100.0 outer 100.0) t=199s
+split 8 (BPFI_30 vs BPFO_10) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=212s
+split 8 (BPFI_30 vs BPFO_10) rf: macro 38.5 (inner 38.5 outer 38.5) t=213s
+split 8 (BPFI_30 vs BPFO_10) rfu: macro 86.8 (inner 86.8 outer 86.8) t=214s
+split 8 (BPFI_30 vs BPFO_10) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=214s
+split 8 (BPFI_30 vs BPFO_10) ref_amplitude: macro 0.0 (inner 0.0 outer 0.0) t=215s
+split 9 (BPFI_30 vs BPFO_30) base: macro 100.0 (inner 100.0 outer 100.0) t=226s
+split 9 (BPFI_30 vs BPFO_30) rowz_drop: macro 100.0 (inner 100.0 outer 100.0) t=238s
+split 9 (BPFI_30 vs BPFO_30) rf: macro 100.0 (inner 100.0 outer 100.0) t=238s
+split 9 (BPFI_30 vs BPFO_30) rfu: macro 100.0 (inner 100.0 outer 100.0) t=239s
+split 9 (BPFI_30 vs BPFO_30) ref_meta_load: macro 50.0 (inner 50.0 outer 50.0) t=239s
+split 9 (BPFI_30 vs BPFO_30) ref_amplitude: macro 86.9 (inner 86.9 outer 86.9) t=240s
+{
+ "base": {
+  "primary_mean_macro": 100.0,
+  "primary_mean_inner": 100.0,
+  "primary_mean_outer": 100.0,
+  "size_matched_mean_macro": 100.0,
+  "size_unmatched_mean_macro": 100.0,
+  "n_splits": 9,
+  "n_size_matched": 3
+ },
+ "rowz_drop": {
+  "primary_mean_macro": 100.0,
+  "primary_mean_inner": 100.0,
+  "primary_mean_outer": 100.0,
+  "size_matched_mean_macro": 100.0,
+  "size_unmatched_mean_macro": 100.0,
+  "n_splits": 9,
+  "n_size_matched": 3
+ },
+ "rf": {
+  "primary_mean_macro": 93.16740111247164,
+  "primary_mean_inner": 93.16740111247164,
+  "primary_mean_outer": 93.16740111247164,
+  "size_matched_mean_macro": 100.0,
+  "size_unmatched_mean_macro": 89.75110166870746,
+  "n_splits": 9,
+  "n_size_matched": 3
+ },
+ "rfu": {
+  "primary_mean_macro": 98.53532845871443,
+  "primary_mean_inner": 98.53532845871443,
+  "primary_mean_outer": 98.53532845871443,
+  "size_matched_mean_macro": 100.0,
+  "size_unmatched_mean_macro": 97.80299268807164,
+  "n_splits": 9,
+  "n_size_matched": 3
+ },
+ "ref_meta_load": {
+  "primary_mean_macro": 50.0,
+  "primary_mean_inner": 50.0,
+  "primary_mean_outer": 50.0,
+  "size_matched_mean_macro": 50.0,
+  "size_unmatched_mean_macro": 50.0,
+  "n_splits": 9,
+  "n_size_matched": 3
+ },
+ "ref_amplitude": {
+  "primary_mean_macro": 82.92700885708891,
+  "primary_mean_inner": 82.92700885708891,
+  "primary_mean_outer": 82.92700885708891,
+  "size_matched_mean_macro": 95.63598742683291,
+  "size_unmatched_mean_macro": 76.57251957221692,
+  "n_splits": 9,
+  "n_size_matched": 3
+ }
+}

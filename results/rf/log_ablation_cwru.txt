@@ -1,0 +1,4 @@
+cwru time5 {"inner": 75.6867630178441, "outer": 64.12278090107483, "macro": 69.90477195945947, "sd_over_splits": 10.079670379683543, "n_splits": 100} 111s
+cwru spectral15 {"inner": 76.93849786079515, "outer": 81.19773622560785, "macro": 79.0681170432015, "sd_over_splits": 9.934812118080663, "n_splits": 100} 110s
+  json.dump(out, open(R.RES / f"ablation_{ds}.json", "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback

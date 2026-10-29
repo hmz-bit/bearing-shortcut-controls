@@ -1,0 +1,9 @@
+{
+ "n_splits": 3,
+ "total_train_seconds": 294.1,
+ "mean_seconds_per_split": 98.60000000000001,
+ "overlap_total": 0,
+ "macro_mean": 45.68091229294148,
+ "inner": 48.84713496643136,
+ "outer": 42.51468961945158
+}

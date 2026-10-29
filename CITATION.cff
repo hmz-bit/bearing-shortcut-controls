@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Code and results for: Shortcut controls for bearing-wise fault-diagnosis benchmarks: a five-dataset case study with an order-resampled envelope-spectrum network"
+type: software
+authors:
+  - family-names: "Coşkun"
+    given-names: "Hamza Mert"
+    affiliation: "Istanbul Technical University, Electronics and Communication Engineering"
+license: MIT
+repository-code: "https://github.com/hmz-bit/bearing-leakage-audit"
+preferred-citation:
+  type: generic
+  title: "Shortcut controls for bearing-wise fault-diagnosis benchmarks: a five-dataset case study with an order-resampled envelope-spectrum network"
+  authors:
+    - family-names: "Coşkun"
+      given-names: "Hamza Mert"
+      affiliation: "Istanbul Technical University, Electronics and Communication Engineering"

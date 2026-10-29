@@ -1,0 +1,12 @@
+# Versions of the packages imported by the code, read from the Python 3.11.1 environment used for all experiments (pip freeze).
+# That environment also exposed unrelated packages of the base interpreter; only the packages
+# the scripts import are pinned here.  Packages used only by one data-set pipeline are marked.
+numpy==2.4.4
+scipy==1.16.1
+pandas==3.0.2
+pyarrow==26.0.0
+scikit-learn==1.9.1
+# CPU or CUDA build of PyTorch; the experiments used the CUDA 12.1 wheel 2.5.1+cu121 (pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121)
+torch==2.5.1
+# only scripts/xjtu/pdf_text.py (text extraction of the provider's documents)
+pymupdf==1.28.2

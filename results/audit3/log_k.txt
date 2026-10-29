@@ -1,0 +1,106 @@
+K xjtu base split 5: macro 88.2 t=4s
+K xjtu base split 15: macro 63.0 t=22s
+K xjtu base split 25: macro 89.4 t=37s
+K xjtu base split 35: macro 87.3 t=54s
+K xjtu base split 45: macro 75.4 t=73s
+K xjtu base split 55: macro 72.6 t=88s
+K xjtu base split 65: macro 75.8 t=105s
+K xjtu base split 75: macro 66.7 t=134s
+K xjtu base split 85: macro 77.8 t=148s
+K xjtu base split 95: macro 87.3 t=166s
+DONE K xjtu base: macro 76.84 inner 75.43 outer 78.24 defined 94 skipped 6
+K xjtu rowz_drop split 5: macro 93.4 t=4s
+K xjtu rowz_drop split 15: macro 93.6 t=20s
+K xjtu rowz_drop split 25: macro 92.9 t=40s
+K xjtu rowz_drop split 35: macro 90.4 t=61s
+K xjtu rowz_drop split 45: macro 91.8 t=75s
+K xjtu rowz_drop split 55: macro 80.1 t=87s
+K xjtu rowz_drop split 65: macro 68.2 t=103s
+K xjtu rowz_drop split 75: macro 77.7 t=120s
+K xjtu rowz_drop split 85: macro 93.7 t=130s
+K xjtu rowz_drop split 95: macro 95.3 t=146s
+DONE K xjtu rowz_drop: macro 86.37 inner 92.38 outer 80.36 defined 94 skipped 6
+K xjtu rf split 5: macro 84.8 t=0s
+K xjtu rf split 15: macro 79.2 t=5s
+K xjtu rf split 25: macro 94.8 t=9s
+K xjtu rf split 35: macro 89.8 t=13s
+K xjtu rf split 45: macro 81.0 t=18s
+K xjtu rf split 55: macro 90.2 t=22s
+K xjtu rf split 65: macro 61.0 t=27s
+K xjtu rf split 75: macro 65.9 t=32s
+K xjtu rf split 85: macro 78.6 t=36s
+K xjtu rf split 95: macro 89.5 t=41s
+DONE K xjtu rf: macro 81.75 inner 88.33 outer 75.18 defined 94 skipped 6
+K xjtu rfu split 5: macro 80.5 t=1s
+K xjtu rfu split 15: macro 82.6 t=10s
+K xjtu rfu split 25: macro 84.6 t=17s
+K xjtu rfu split 35: macro 89.3 t=25s
+K xjtu rfu split 45: macro 87.3 t=34s
+K xjtu rfu split 55: macro 70.6 t=42s
+K xjtu rfu split 65: macro 72.3 t=51s
+K xjtu rfu split 75: macro 62.8 t=58s
+K xjtu rfu split 85: macro 75.1 t=62s
+K xjtu rfu split 95: macro 89.2 t=67s
+DONE K xjtu rfu: macro 81.11 inner 85.81 outer 76.40 defined 94 skipped 6
+K xjtu meta split 5: macro 50.0 t=0s
+K xjtu meta split 15: macro 55.1 t=5s
+K xjtu meta split 25: macro 79.1 t=8s
+K xjtu meta split 35: macro 26.8 t=13s
+K xjtu meta split 45: macro 50.0 t=18s
+K xjtu meta split 55: macro 69.9 t=22s
+K xjtu meta split 65: macro 50.0 t=27s
+K xjtu meta split 75: macro 36.6 t=31s
+K xjtu meta split 85: macro 50.0 t=34s
+K xjtu meta split 95: macro 38.5 t=39s
+DONE K xjtu meta: macro 51.99 inner 62.30 outer 41.69 defined 94 skipped 6
+K rtf base split 5: macro 49.9 t=14s
+K rtf base split 15: macro 53.4 t=59s
+K rtf base split 25: macro 43.8 t=106s
+K rtf base split 35: macro 91.7 t=203s
+K rtf base split 45: macro 79.4 t=277s
+K rtf base split 65: macro 69.0 t=344s
+K rtf base split 75: macro 92.2 t=376s
+K rtf base split 85: macro 49.6 t=408s
+K rtf base split 95: macro 67.1 t=474s
+DONE K rtf base: macro 63.48 inner 67.62 outer 59.34 defined 96 skipped 4
+K rtf rowz_drop split 5: macro 60.7 t=14s
+K rtf rowz_drop split 15: macro 66.8 t=105s
+K rtf rowz_drop split 25: macro 57.8 t=189s
+K rtf rowz_drop split 35: macro 92.4 t=240s
+K rtf rowz_drop split 45: macro 84.9 t=273s
+K rtf rowz_drop split 65: macro 83.4 t=330s
+K rtf rowz_drop split 75: macro 89.5 t=363s
+K rtf rowz_drop split 85: macro 45.3 t=397s
+K rtf rowz_drop split 95: macro 78.2 t=436s
+DONE K rtf rowz_drop: macro 71.82 inner 72.53 outer 71.12 defined 96 skipped 4
+K rtf rf split 5: macro 48.2 t=1s
+K rtf rf split 15: macro 51.7 t=6s
+K rtf rf split 25: macro 45.8 t=12s
+K rtf rf split 35: macro 95.1 t=17s
+K rtf rf split 45: macro 86.7 t=23s
+K rtf rf split 65: macro 72.7 t=33s
+K rtf rf split 75: macro 93.6 t=38s
+K rtf rf split 85: macro 34.6 t=44s
+K rtf rf split 95: macro 81.4 t=51s
+DONE K rtf rf: macro 67.49 inner 67.24 outer 67.73 defined 96 skipped 4
+K rtf rfu split 5: macro 55.3 t=1s
+K rtf rfu split 15: macro 55.2 t=6s
+K rtf rfu split 25: macro 42.8 t=13s
+K rtf rfu split 35: macro 95.8 t=20s
+K rtf rfu split 45: macro 88.8 t=25s
+K rtf rfu split 65: macro 77.4 t=36s
+K rtf rfu split 75: macro 96.5 t=42s
+K rtf rfu split 85: macro 42.0 t=47s
+K rtf rfu split 95: macro 83.4 t=52s
+DONE K rtf rfu: macro 72.53 inner 73.46 outer 71.61 defined 96 skipped 4
+K rtf meta split 5: macro 50.1 t=1s
+K rtf meta split 15: macro 60.9 t=6s
+K rtf meta split 25: macro 47.6 t=12s
+K rtf meta split 35: macro 42.4 t=17s
+K rtf meta split 45: macro 51.7 t=25s
+K rtf meta split 65: macro 51.3 t=43s
+K rtf meta split 75: macro 26.6 t=53s
+K rtf meta split 85: macro 39.7 t=63s
+K rtf meta split 95: macro 62.3 t=73s
+DONE K rtf meta: macro 47.29 inner 50.17 outer 44.42 defined 96 skipped 4
+ALLDONE

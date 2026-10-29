@@ -1,0 +1,24 @@
+T3tune rowz s0 split 0: 1500 86.3 (out 76.5) | 900 82.7 (in 89.5 out 75.8)
+T3tune rowz s0 split 1: 1500 95.3 (out 90.9) | 900 92.4 (in 93.7 out 91.1)
+T3tune rowz s0 split 2: 1500 92.6 (out 85.2) | 900 85.6 (in 99.5 out 71.6)
+T3tune rowz s0 split 3: 1500 82.2 (out 67.3) | 900 77.2 (in 83.3 out 71.2)
+T3tune rowz s0 split 4: 1500 96.9 (out 95.0) | 900 84.3 (in 83.9 out 84.7)
+== T3tune rowz seed0: 1500 macro 90.64 | 900 macro 84.42 (inner 89.96, outer 78.88) | loss 6.22
+T3tune b6 s0 split 0: 1500 93.2 (out 94.6) | 900 70.1 (in 80.5 out 59.8)
+T3tune b6 s0 split 1: 1500 94.5 (out 96.4) | 900 71.5 (in 80.7 out 62.3)
+T3tune b6 s0 split 2: 1500 97.4 (out 95.8) | 900 79.1 (in 98.1 out 60.1)
+T3tune b6 s0 split 3: 1500 91.8 (out 97.5) | 900 77.2 (in 88.7 out 65.7)
+T3tune b6 s0 split 4: 1500 87.2 (out 94.2) | 900 63.7 (in 55.5 out 71.9)
+== T3tune b6 seed0: 1500 macro 92.83 | 900 macro 72.33 (inner 80.70, outer 63.96) | loss 20.50
+T3tune aug s0 split 0: 1500 93.1 (out 91.1) | 900 74.5 (in 81.4 out 67.5)
+T3tune aug s0 split 1: 1500 91.5 (out 90.1) | 900 74.3 (in 91.7 out 57.0)
+T3tune aug s0 split 2: 1500 84.0 (out 79.6) | 900 71.0 (in 85.3 out 56.8)
+T3tune aug s0 split 3: 1500 78.2 (out 74.6) | 900 61.9 (in 87.3 out 36.5)
+T3tune aug s0 split 4: 1500 95.6 (out 96.1) | 900 74.2 (in 83.5 out 64.9)
+== T3tune aug seed0: 1500 macro 88.51 | 900 macro 71.20 (inner 85.85, outer 56.55) | loss 17.31
+T3tune comb s0 split 0: 1500 89.3 (out 88.1) | 900 79.9 (in 80.2 out 79.7)
+T3tune comb s0 split 1: 1500 82.9 (out 80.4) | 900 69.8 (in 87.8 out 51.7)
+T3tune comb s0 split 2: 1500 79.6 (out 70.2) | 900 69.6 (in 95.1 out 44.1)
+T3tune comb s0 split 3: 1500 78.9 (out 74.2) | 900 66.5 (in 94.9 out 38.2)
+T3tune comb s0 split 4: 1500 95.9 (out 97.6) | 900 79.6 (in 85.0 out 74.2)
+== T3tune comb seed0: 1500 macro 85.32 | 900 macro 73.10 (inner 88.60, outer 57.59) | loss 12.23

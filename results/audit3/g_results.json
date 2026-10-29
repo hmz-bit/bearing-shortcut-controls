@@ -1,0 +1,59 @@
+{
+ "base": {
+  "auroc_high_dc_damaged_vs_healthy": 98.08333333333333,
+  "n_high": 100,
+  "auroc_low_dc_damaged_vs_healthy": 95.90163934426229,
+  "n_low": 61,
+  "per_bearing_share_healthy_below": {
+   "KA04": 100.0,
+   "KA15": 93.8,
+   "KA16": 100.0,
+   "KA22": 100.0,
+   "KA30": 92.3,
+   "KI04": 100.0,
+   "KI14": 89.3,
+   "KI16": 100.0,
+   "KI17": 98.0,
+   "KI18": 100.0,
+   "KI21": 98.3
+  }
+ },
+ "rowz_drop": {
+  "auroc_high_dc_damaged_vs_healthy": 93.66666666666666,
+  "n_high": 100,
+  "auroc_low_dc_damaged_vs_healthy": 88.9344262295082,
+  "n_low": 61,
+  "per_bearing_share_healthy_below": {
+   "KA04": 100.0,
+   "KA15": 81.2,
+   "KA16": 100.0,
+   "KA22": 86.5,
+   "KA30": 78.2,
+   "KI04": 100.0,
+   "KI14": 89.3,
+   "KI16": 97.3,
+   "KI17": 100.0,
+   "KI18": 100.0,
+   "KI21": 85.0
+  }
+ },
+ "b1": {
+  "auroc_high_dc_damaged_vs_healthy": 89.87499999999999,
+  "n_high": 100,
+  "auroc_low_dc_damaged_vs_healthy": 90.57377049180327,
+  "n_low": 61,
+  "per_bearing_share_healthy_below": {
+   "KA04": 98.6,
+   "KA15": 77.1,
+   "KA16": 95.1,
+   "KA22": 68.9,
+   "KA30": 89.7,
+   "KI04": 93.9,
+   "KI14": 83.9,
+   "KI16": 97.3,
+   "KI17": 96.0,
+   "KI18": 100.0,
+   "KI21": 88.3
+  }
+ }
+}

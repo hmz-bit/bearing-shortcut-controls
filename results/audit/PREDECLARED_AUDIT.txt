@@ -1,0 +1,15 @@
+OVERFITTING / MEMORISATION AUDIT, written before any audit run. Not to be changed afterwards.
+
+Variants audited (both exactly as in Phase 2, same config, no new tuning): base = LF-PNCN, rowz_drop = V1 of PREDECLARED.txt.
+
+A1  Train-vs-held-out gap. Tuning splits 0-4 only. Record window-level macro AUROC on training bearings and on the held-out (validation) bearings.
+    Reading: a larger train-held gap for rowz_drop than for base would mean the change increased memorisation.
+A2  Bearing-label permutation (negative control). Tuning splits 0-4, 5 random permutations each (seed 7000+). The (inner, outer) label vector of each of the 17 bearings
+    is reassigned to a different bearing; training and held-out labels both permuted; a permutation is skipped if a held-out set lacks a class.
+    Reading: held-out macro AUROC must average about 50 (SD large, only 6 held-out bearings). A mean above ~56 for either variant, or a clearly higher mean for
+    rowz_drop than for base, would indicate leakage or identity memorisation that carries over to held-out bearings.
+A3  Untouched-bearing test (reverse Tier 2). The 12 artificial-damage bearings were never used for diagnosis, selection or tuning in phase 2.
+    Train on the 11 real faulty bearings + 4 healthy; test on the 12 artificial + 2 held-out healthy; the 15 healthy pairs in the fixed Tier 2 order; one seed (pair index).
+    Single paired comparison: macro AUROC of rowz_drop minus base, bearing-level cluster bootstrap (B=2000), plus per-label values.
+    Decision rule: confirmed = difference > 0 and 95% CI lower bound > 0; inconclusive = point estimate >= 0 but CI includes 0; not reproduced = point estimate < 0.
+    Everything is reported whatever the result. No variant is added, removed or changed after seeing A3.

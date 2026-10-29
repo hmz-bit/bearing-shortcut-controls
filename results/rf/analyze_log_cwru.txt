@@ -1,0 +1,44 @@
+cwru: all five prediction sets have identical rows (133200) and keys ['split', 'unit', 'y_inner', 'y_outer']
+tie-aware weighted AUROC fast path vs sklearn: 46 checks, max abs difference 2.22e-16
+== cwru primary
+  base       macro 88.40 CI [83.77, 93.53] inner 96.05 outer 80.75 sd 7.65 valid 100
+  rowz_drop  macro 95.29 CI [88.78, 99.80] inner 99.89 outer 90.69 sd 7.03 valid 100
+  b1         macro 71.75 CI [64.17, 79.07] inner 83.39 outer 60.10 sd 12.13 valid 100
+  rf         macro 80.35 CI [71.72, 88.81] inner 81.20 outer 79.50 sd 10.80 valid 100
+  rfu        macro 79.36 CI [70.07, 88.44] inner 78.38 outer 80.34 sd 9.96 valid 100
+  rowz_drop_minus_rf_macro           +14.94 [+7.52, +23.32]
+  base_minus_rf_macro                +8.05 [+0.94, +17.06]
+  b1_minus_rf_macro                  -8.61 [-14.38, -2.00]
+  rowz_drop_minus_rfu_macro          +15.93 [+8.01, +25.19]
+  base_minus_rfu_macro               +9.04 [+1.27, +18.54]
+  b1_minus_rfu_macro                 -7.62 [-14.22, -0.07]
+  rf_minus_rfu_macro                 +0.99 [-0.79, +2.88]
+  rowz_drop_minus_base_macro         +6.89 [+1.47, +11.36]
+  rowz_drop_minus_b1_macro           +23.54 [+15.50, +31.17]
+  base_minus_b1_macro                +16.66 [+10.42, +24.20]
+decisions {
+ "R1_rf": "met",
+ "R1_rfu": "met",
+ "R2_rowz_drop_minus_rf": "SUPPORTED; +6 met",
+ "R2_rowz_drop_minus_rfu": "SUPPORTED; +6 met",
+ "R2_base_minus_rf": "SUPPORTED",
+ "R2_base_minus_rfu": "SUPPORTED",
+ "R2_b1_minus_rf": "NOT SUPPORTED; RF significantly ahead",
+ "R2_b1_minus_rfu": "NOT SUPPORTED; RFU significantly ahead",
+ "R3_rowz_drop_not_losing_to_rf": "holds",
+ "R3_rowz_drop_not_losing_to_rfu": "holds"
+}
+model                           b1  base    rf   rfu  rowz_drop
+label bearing  negatives                                       
+inner DE_IR_14 all_negatives  82.2  98.6  87.4  87.8       99.8
+      DE_IR_21 all_negatives  89.0  85.8  94.9  93.7      100.0
+      DE_IR_7  all_negatives  92.4  99.7  96.1  97.8       99.7
+      FE_IR_14 all_negatives  73.2  95.0  54.7  49.4       99.9
+      FE_IR_21 all_negatives  81.6  95.2  83.7  76.0       99.9
+      FE_IR_7  all_negatives  82.0  99.1  73.3  67.7      100.0
+outer DE_OR_14 all_negatives  32.9  54.0  28.5  30.1       37.3
+      DE_OR_21 all_negatives  70.0  73.6  97.4  98.0       98.6
+      DE_OR_7  all_negatives  54.9  88.3  97.6  94.8       99.8
+      FE_OR_14 all_negatives  74.9  91.9  95.3  94.0      100.0
+      FE_OR_21 all_negatives  48.5  84.7  56.6  62.3       98.7
+      FE_OR_7  all_negatives  77.0  87.7  93.5  94.8      100.0

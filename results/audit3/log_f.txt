@@ -1,0 +1,5 @@
+F F1_condition {'inner': 50.017744778107954, 'outer': 50.02770840305456, 'macro': 50.02272659058126, 'n_splits': 100, 'above_56': False}
+F F2_dc {'inner': 59.717553031736934, 'outer': 52.904295619624335, 'macro': 56.31092432568063, 'n_splits': 100, 'above_56': True}
+F F3_dc_len {'inner': 63.333242970430945, 'outer': 57.4794119690929, 'macro': 60.40632746976192, 'n_splits': 100, 'above_56': True}
+F F4_cond_dc_len {'inner': 64.08707226848026, 'outer': 58.56806519226319, 'macro': 61.32756873037172, 'n_splits': 100, 'above_56': True}
+F done 347 s

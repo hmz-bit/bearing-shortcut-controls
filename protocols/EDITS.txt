@@ -1,0 +1,56 @@
+PROTOCOL EDITS
+
+The pre-declaration files in this folder are byte-identical copies of the originals, except for the minimal
+changes of wording that remove references to files and planning documents outside this repository (files without an edit: identical sha256).
+Hashes are SHA-256 of the file bytes; for an edited file both hashes are given.
+
+PREDECLARED_AUDIT.txt: unchanged, sha256 b24f72a624b0094706af688a08f90cff7ccdcaec28ec8225facd0d63dabd5f6a
+
+PREDECLARED_CWRU.txt: unchanged, sha256 2d6c1264b02576316b05568a07ca6609d694e2377136d68b063fd4a427e8ff5b
+
+PREDECLARED_B1_CWRU.txt
+  original sha256: 4db3a550efcc24a182428a35c487a4d61ff1744411c07304bb98c2852e9122d6
+  edited   sha256: 2ba962920efd7c82cba84a9473b2a84e981cd883afc8406676ab392c188fa66e
+
+PREDECLARED.txt: unchanged, sha256 c09c9581cb76f9b31d858c399bb5e1cb269c9000add9d21721d735b4e0a54a1d
+
+PREDECLARED_RTF.txt
+  original sha256: b4e7d0eb6cdeaa389e03dc18a7a647079f1cbdaa21c171b1246299dc01fe609c
+  edited   sha256: f1896d3601e33ba0643f5c8e7a2fa78aefd27a668e5ed2e3cdb5ecd2bc1a0a06
+
+PREDECLARED_RTF_ADDENDUM1.txt: unchanged, sha256 c045ff6184a15f71f5f2ae4175601c45116a9ee466c686d90295011abd563aee
+
+PREDECLARED_UORED.txt: unchanged, sha256 c5f623541eced0f9ea7084b8a8b3902d542dbbe09b16fd4f263adb3c9a13e12a
+
+PREDECLARED_B1_UORED.txt
+  original sha256: b7e474ad81d1091be0dfe5722624ae6f402b2b87a9dd776a87de837178173870
+  edited   sha256: 02aeda4db727c8ea8e4df4587a791e3b49e15f7aa0269d5e10a6033ec9768669
+
+PREDECLARED_XJTU.txt
+  original sha256: 57e3cbb5634a0902937c9e6b21305e4db203b6b8bea37b80b7115dcce05028f9
+  edited   sha256: 06bb4eb0f628bc57cff64151e0f067e8a9d78ce5daffd286472030ac7b1c4f9c
+
+PREDECLARED_RF.txt: unchanged, sha256 b686ea4d3113030c2e3a6215879c06d251c5967dcdb7812d6a7688a03ea46e14
+
+PREDECLARED_RF_ADDENDUM1.txt: unchanged, sha256 53e81bcb8ac891be0e0b08ed190862e65a3d2551e5636f804aa8845a5961e633
+
+PREDECLARED_AUDIT2.txt
+  original sha256: 8061ae5c76461523ed872f293b3393638a6c4a9ef72721d8c585f95c86fbee16
+  edited   sha256: 137acbf0dbabfad2499319d0c5522d1027bf8e58da3865d0139d8fc4e4ab1ddf
+
+PREDECLARED_AUDIT3.txt
+  original sha256: f2320b3a84f02f8b1d689e8c55c1193dccd3a9da1cb716756d64ae5da23dbeb2
+  edited   sha256: 9ebfbc4f1b015d0f85465907ad3ad78f9eb1afd842f1eb51930b4cd2571ed43e
+
+PREDECLARED_KAIST.txt
+  original sha256: 726ad1ebfc066d3e84785d880b2e54fd88086848ae37033f06595accfbe39995
+  edited   sha256: 4698e9fd6ecd9bc63e178884272e1211c7d1f441516a237f692b72fc626ca826
+
+PREDECLARED_ABLATION.txt
+  original sha256: 89427fd77852cd08a064c041c56f5d0adf239b45b9cb8524e5072104912adde5
+  edited   sha256: 32000597a5e982c530822372a9de9cfecd1f3e1052fc56cbf077c07cbe7cda9a
+
+PREDECLARED_AUDIT4.txt
+  original sha256: b70c6f3ec21ba898922689c7942c2cc7690844d6f7df4a1bc25df9926224ef9d
+  edited   sha256: 75340c355f916f0d861a2af72a84ffb08b779cda42ad45fb48b04bf4d25d9955
+

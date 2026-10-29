@@ -1,0 +1,106 @@
+rtf: all five prediction sets have identical rows (105412) and keys ['split', 'bearing', 'stage', 'M', 'y_inner', 'y_outer']
+tie-aware weighted AUROC fast path vs sklearn: 46 checks, max abs difference 1.11e-16
+  mac = np.nanmean(bt[n].mean(1), axis=0)
+  d = 100 * (np.nanmean(bt[a].mean(1), axis=0) - np.nanmean(bt[b].mean(1), axis=0)); p = out[a]["macro"] - out[b]["macro"]
+  d = 100 * (np.nanmean(bt[a][:, li], axis=0) - np.nanmean(bt[b][:, li], axis=0)); p = out[a][lab] - out[b][lab]
+dropped  base  rowz_drop    b1    rf   rfu  rowz_drop_minus_rf  base_minus_rf  b1_minus_rf
+    B02 67.66      72.01 64.34 71.41 75.53                0.61          -3.74        -7.07
+    B03 67.25      71.74 65.66 72.83 76.87               -1.09          -5.58        -7.17
+    B04 67.98      72.15 65.47 71.54 75.63                0.61          -3.55        -6.06
+    B05 68.58      74.49 67.62 73.95 77.92                0.54          -5.37        -6.32
+    B06 69.44      74.52 68.39 73.30 78.08                1.22          -3.86        -4.91
+    B07 70.29      74.22 68.58 74.92 79.45               -0.70          -4.63        -6.34
+    B08 67.35      72.06 65.31 71.61 75.76                0.44          -4.26        -6.31
+    B09 62.23      68.31 58.62 67.59 72.30                0.72          -5.36        -8.97
+    B10 65.16      70.79 62.65 69.77 74.17                1.02          -4.61        -7.12
+    B12 68.13      72.53 66.10 72.82 76.93               -0.30          -4.69        -6.72
+    B13 68.45      73.09 66.36 73.12 77.37               -0.03          -4.67        -6.76
+    B14 68.56      71.76 64.64 71.94 76.62               -0.18          -3.38        -7.29
+    B15 68.95      73.24 66.42 73.42 77.59               -0.18          -4.47        -7.01
+    B17 72.11      74.43 68.50 75.88 79.87               -1.45          -3.76        -7.38
+== rtf primary
+  base       macro 76.42 CI [68.02, 86.03] inner 81.31 outer 71.54 sd 9.64 valid 100
+  rowz_drop  macro 78.85 CI [72.25, 87.06] inner 78.49 outer 79.21 sd 7.72 valid 100
+  b1         macro 72.51 CI [61.16, 83.43] inner 83.41 outer 61.61 sd 11.50 valid 100
+  rf         macro 85.70 CI [81.68, 92.16] inner 86.48 outer 84.92 sd 7.47 valid 100
+  rfu        macro 86.05 CI [81.49, 93.22] inner 86.97 outer 85.13 sd 7.05 valid 100
+  stage_only macro 84.05 CI [82.24, 88.59] inner 88.56 outer 79.54 sd 2.36 valid 100
+  rowz_drop_minus_rf_macro           -6.85 [-12.72, -1.69]
+  base_minus_rf_macro                -9.28 [-16.66, -3.60]
+  b1_minus_rf_macro                  -13.19 [-23.31, -6.28]
+  rowz_drop_minus_rfu_macro          -7.20 [-12.27, -2.62]
+  base_minus_rfu_macro               -9.63 [-16.40, -4.30]
+  b1_minus_rfu_macro                 -13.54 [-22.46, -7.23]
+  rf_minus_rfu_macro                 -0.35 [-1.56, +1.15]
+  rowz_drop_minus_base_macro         +2.43 [-1.54, +6.59]
+  rowz_drop_minus_b1_macro           +6.35 [+2.09, +12.15]
+  base_minus_b1_macro                +3.92 [-1.43, +9.88]
+  rf_minus_stage_only_macro          +1.65 [-4.46, +8.71]
+  rfu_minus_stage_only_macro         +2.00 [-5.17, +9.82]
+  rowz_drop_minus_stage_only_macro   -5.20 [-14.95, +3.82]
+  base_minus_stage_only_macro        -7.63 [-18.95, +2.78]
+  b1_minus_stage_only_macro          -11.55 [-26.41, -0.07]
+== rtf stage_matched
+  base       macro 68.52 CI [54.79, 83.29] inner 73.48 outer 63.14 sd 14.38 valid 96
+  rowz_drop  macro 72.96 CI [61.56, 84.33] inner 70.72 outer 74.61 sd 10.88 valid 96
+  b1         macro 66.10 CI [51.68, 80.60] inner 74.75 outer 56.48 sd 13.25 valid 96
+  rf         macro 72.76 CI [61.21, 85.55] inner 72.32 outer 72.92 sd 12.94 valid 96
+  rfu        macro 76.98 CI [65.48, 89.40] inner 77.71 outer 75.77 sd 11.77 valid 96
+  rowz_drop_minus_rf_macro           +0.20 [-5.08, +4.68]
+  base_minus_rf_macro                -4.24 [-9.34, +0.21]
+  b1_minus_rf_macro                  -6.66 [-12.51, -1.50]
+  rowz_drop_minus_rfu_macro          -4.02 [-9.99, +0.18]
+  base_minus_rfu_macro               -8.46 [-13.86, -3.88]
+  b1_minus_rfu_macro                 -10.88 [-16.99, -5.91]
+  rf_minus_rfu_macro                 -4.22 [-6.46, -2.51]
+  rowz_drop_minus_base_macro         +4.44 [-2.13, +10.26]
+  rowz_drop_minus_b1_macro           +6.86 [+1.93, +11.15]
+  base_minus_b1_macro                +2.42 [-3.18, +8.20]
+decisions {
+ "R1_rf": "met",
+ "R1_rfu": "met",
+ "R2_rowz_drop_minus_rf": "NOT SUPPORTED; RF significantly ahead; +6 not met",
+ "R2_rowz_drop_minus_rfu": "NOT SUPPORTED; RFU significantly ahead; +6 not met",
+ "R2_base_minus_rf": "NOT SUPPORTED; RF significantly ahead",
+ "R2_base_minus_rfu": "NOT SUPPORTED; RFU significantly ahead",
+ "R2_b1_minus_rf": "NOT SUPPORTED; RF significantly ahead",
+ "R2_b1_minus_rfu": "NOT SUPPORTED; RFU significantly ahead",
+ "R3_rowz_drop_not_losing_to_rf": "FAILS (point estimate below RF)",
+ "R3_rowz_drop_not_losing_to_rfu": "FAILS (point estimate below RF)"
+}
+model                                b1  base    rf   rfu  rowz_drop  stage_only
+label bearing negatives                                                         
+inner B01     all_negatives        88.8  67.5  93.6  88.7       59.1        89.4
+              late_life_negatives  81.8  56.0  80.9  81.5       50.5        50.0
+      B02     all_negatives        99.1  96.7  98.9  99.5       94.1        90.0
+              late_life_negatives  97.0  92.7  95.9  98.2       87.4        50.0
+      B03     all_negatives        94.7  97.6  94.3  95.6       99.2        88.0
+              late_life_negatives  88.8  96.4  82.1  87.8       98.3        50.0
+      B04     all_negatives        95.8  91.0  99.6  99.9       94.2        89.8
+              late_life_negatives  92.3  87.0  98.5  99.8       89.1        50.0
+      B06     all_negatives        51.9  60.9  90.5  84.6       40.3        90.1
+              late_life_negatives  32.9  48.9  65.3  61.6       29.3        50.0
+      B07     all_negatives        39.0  47.6  29.2  28.7       51.4        90.1
+              late_life_negatives  21.1  26.6   9.9  11.5       35.1        50.0
+      B08     all_negatives        95.6  96.2  97.7  98.8       96.5        89.4
+              late_life_negatives  90.3  93.6  90.8  95.2       92.0        50.0
+      B11     all_negatives        91.8  77.2  93.1  94.3       72.6        89.4
+              late_life_negatives  83.5  73.7  75.8  84.6       63.7        50.0
+      B12     all_negatives        97.2  92.3  97.0  98.9       97.1        89.3
+              late_life_negatives  92.0  85.4  86.2  95.4       92.3        50.0
+      B13     all_negatives        88.3  89.3  90.0  91.7       83.1        90.3
+              late_life_negatives  79.6  84.9  71.3  82.3       73.3        50.0
+      B15     all_negatives        86.4  84.4  84.3  88.7       82.6        90.6
+              late_life_negatives  75.1  79.2  58.2  72.9       76.1        50.0
+      B16     all_negatives        89.4  84.2  87.6  88.5       85.7        89.7
+              late_life_negatives  85.2  74.9  74.4  80.9       80.4        50.0
+outer B01     all_negatives        43.6  76.8  87.9  87.2       79.2        79.4
+              late_life_negatives  39.4  66.6  75.1  76.7       73.9        50.0
+      B09     all_negatives        94.1  92.1  95.8  99.3       99.5        80.5
+              late_life_negatives  89.6  89.1  91.9  98.3       99.1        50.0
+      B10     all_negatives        92.4  88.7  93.0  98.2       98.6        80.7
+              late_life_negatives  88.4  85.6  87.3  96.6       97.9        50.0
+      B11     all_negatives        43.5  52.2  80.2  79.2       68.7        80.6
+              late_life_negatives  36.4  41.2  60.9  64.5       59.2        50.0
+      B16     all_negatives        32.9  49.6  68.1  64.2       54.8        80.3
+              late_life_negatives  27.7  36.9  46.6  46.1       49.4        50.0

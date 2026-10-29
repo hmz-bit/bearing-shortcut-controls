@@ -1,0 +1,12 @@
+T3tune L4 s0 split 0: 1500 79.4 (out 78.9) | 900 81.5 (in 85.7 out 77.3)
+T3tune L4 s0 split 1: 1500 79.3 (out 78.9) | 900 85.1 (in 88.5 out 81.8)
+T3tune L4 s0 split 2: 1500 71.6 (out 63.7) | 900 75.6 (in 98.8 out 52.3)
+T3tune L4 s0 split 3: 1500 63.3 (out 62.2) | 900 66.9 (in 95.8 out 38.0)
+T3tune L4 s0 split 4: 1500 96.3 (out 97.6) | 900 85.2 (in 91.1 out 79.4)
+== T3tune L4 seed0: 1500 macro 77.98 | 900 macro 78.86 (inner 91.96, outer 65.77) | loss -0.88
+T3tune ML14 s0 split 0: 1500 81.3 (out 81.2) | 900 80.8 (in 87.1 out 74.5)
+T3tune ML14 s0 split 1: 1500 81.3 (out 81.5) | 900 76.8 (in 76.5 out 77.1)
+T3tune ML14 s0 split 2: 1500 80.2 (out 72.2) | 900 73.5 (in 98.6 out 48.5)
+T3tune ML14 s0 split 3: 1500 73.0 (out 72.0) | 900 63.5 (in 98.7 out 28.3)
+T3tune ML14 s0 split 4: 1500 96.9 (out 97.9) | 900 82.8 (in 85.8 out 79.8)
+== T3tune ML14 seed0: 1500 macro 82.54 | 900 macro 75.48 (inner 89.33, outer 61.63) | loss 7.06

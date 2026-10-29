@@ -1,0 +1,29 @@
+== t1shuf: 3 splits, epochs 30, workers 4, mult 1, seed 0
+split 5: train bearings 11, files 880, std_train 0.31407
+    epoch 1/30 loss 0.6729
+    epoch 5/30 loss 0.6241
+    epoch 10/30 loss 0.6228
+    epoch 15/30 loss 0.6164
+    epoch 20/30 loss 0.6124
+    epoch 25/30 loss 0.6218
+    epoch 30/30 loss 0.6153
+split 5 done in 113.1s (train 112.5s)
+split 25: train bearings 11, files 880, std_train 0.31460
+    epoch 1/30 loss 0.6632
+    epoch 5/30 loss 0.6237
+    epoch 10/30 loss 0.6194
+    epoch 15/30 loss 0.6236
+    epoch 20/30 loss 0.6168
+    epoch 25/30 loss 0.6146
+    epoch 30/30 loss 0.6071
+split 25 done in 90.9s (train 90.4s)
+split 45: train bearings 11, files 880, std_train 0.29341
+    epoch 1/30 loss 0.6708
+    epoch 5/30 loss 0.6203
+    epoch 10/30 loss 0.6150
+    epoch 15/30 loss 0.6133
+    epoch 20/30 loss 0.6152
+    epoch 25/30 loss 0.6103
+    epoch 30/30 loss 0.6041
+split 45 done in 91.8s (train 91.2s)
+== t1shuf finished in 296s

@@ -1,0 +1,7 @@
+base perm0 split 17: held 37.5 (IR 45.8 OR 29.2) train 100.0 t=48s
+base perm1 split 17: held 29.9 (IR 20.4 OR 39.3) train 100.0 t=91s
+base perm0 split 18: held 49.3 (IR 38.9 OR 59.6) train 100.0 t=143s
+base perm1 split 18: held 39.2 (IR 63.2 OR 15.3) train 100.0 t=215s
+base perm0 split 19: held 40.8 (IR 50.0 OR 31.5) train 100.0 t=279s
+base perm1 split 19: held 40.2 (IR 63.7 OR 16.7) train 100.0 t=335s
+DONE permw_base_r17-19

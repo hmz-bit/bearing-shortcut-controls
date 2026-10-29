@@ -1,0 +1,7 @@
+base perm0 split 20: held 31.1 (IR 23.9 OR 38.4) train 100.0 t=52s
+base perm1 split 20: held 61.8 (IR 61.8 OR 61.7) train 100.0 t=99s
+base perm0 split 21: held 54.0 (IR 70.1 OR 37.9) train 100.0 t=146s
+base perm1 split 21: held 52.8 (IR 53.4 OR 52.2) train 100.0 t=213s
+base perm0 split 22: held 76.8 (IR 66.1 OR 87.5) train 100.0 t=274s
+base perm1 split 22: held 49.1 (IR 46.3 OR 51.8) train 100.0 t=325s
+DONE permw_base_r20-22

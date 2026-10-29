@@ -1,0 +1,6 @@
+T3tune base s0 split 0: 1500 89.3 (out 88.3) | 900 78.4 (in 78.0 out 78.8)
+T3tune base s0 split 1: 1500 83.0 (out 80.7) | 900 69.2 (in 87.0 out 51.3)
+T3tune base s0 split 2: 1500 76.6 (out 67.2) | 900 69.7 (in 95.2 out 44.1)
+T3tune base s0 split 3: 1500 78.8 (out 73.7) | 900 67.6 (in 95.3 out 39.9)
+T3tune base s0 split 4: 1500 95.6 (out 97.3) | 900 79.6 (in 85.1 out 74.0)
+== T3tune base seed0: 1500 macro 84.65 | 900 macro 72.88 (inner 88.11, outer 57.64) | loss 11.78
