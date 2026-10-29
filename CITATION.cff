@@ -6,7 +6,7 @@ authors:
   - family-names: "Coşkun"
     given-names: "Hamza Mert"
     affiliation: "Istanbul Technical University, Electronics and Communication Engineering"
-license: MIT
+license: PolyForm-Noncommercial-1.0.0
 repository-code: "https://github.com/hmz-bit/bearing-leakage-audit"
 preferred-citation:
   type: generic

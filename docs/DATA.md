@@ -158,5 +158,5 @@ Obtain:    scripts/kaist/fetch_kaist.py (reads the 18 members of vibration.zip w
 ------------------------------------------------------------
 results/ contains model predictions (scores and labels per window, bearing identifiers), per-split and per-bearing metrics, bootstrap outputs and
 logs produced by this project.  Bearing identifiers and window indices are those of the providers' file naming.  No signal samples are included.
-Providers' terms (in particular CC BY-NC 4.0 for PU) apply to the data, not to the code, which is MIT licensed (LICENSE).
+Providers' terms (in particular CC BY-NC 4.0 for PU) apply to the data, not to the code, which is licensed under the PolyForm Noncommercial License 1.0.0 (LICENSE).
 The prediction files contain scores, labels and identifiers only; those derived from PU are shared for noncommercial academic use under the provider's terms, which the reader should check before any other use.  Split lists, features and saved logits of the third-party benchmark are not included.

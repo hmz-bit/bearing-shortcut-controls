@@ -1,12 +1,20 @@
-# bearing-order-spectra
+# Shortcut controls for bearing-wise fault-diagnosis benchmarks
 
-Code, protocols and result tables for a study of bearing fault diagnosis with order-resampled envelope spectra
-(three frequency bands, a three-branch one-dimensional CNN) evaluated with strictly bearing-wise splits and a
-bearing-level cluster bootstrap.  Paper: Shortcut controls for bearing-wise fault-diagnosis benchmarks: a five-dataset case study with an order-resampled envelope-spectrum network (see CITATION.cff).
+Code, written protocols (pre-declarations), predictions and result tables for the paper
+*Shortcut controls for bearing-wise fault-diagnosis benchmarks: a five-dataset case study with an order-resampled envelope-spectrum network*
+(Hamza Mert Coşkun, Istanbul Technical University).
 
-Author, affiliation and copyright holder: see LICENSE and CITATION.cff.
-Parts of the code were written with the assistance of a generative AI tool under the author's direction; see the statement in the paper.
-Licence of the code and of the result tables produced by it: MIT (LICENSE).  The data sets it uses have their own licences (docs/DATA.md).
+The study applies a set of evaluation-only controls (label permutation, life-stage and metadata-only references, restricted negative classes,
+bearing-level aggregation, a stage-free fault-type setting, a test-invariance check) to five public bearing datasets under strictly bearing-wise
+splits, and uses them to assess a small convolutional network on order-resampled squared-envelope spectra (three frequency bands, three branches,
+22,947 parameters) with a paired bearing-level cluster bootstrap.  How to cite: see CITATION.cff.
+
+## License and permitted use
+
+The code, the protocols and the result tables are released under the PolyForm Noncommercial License 1.0.0 (file LICENSE).  Use for research,
+teaching, study and other noncommercial purposes, including by universities and public research organisations, is permitted.  Commercial use is not
+permitted without prior written permission of the author; the contact address is given in the paper.  The data sets used here have their own
+licences (docs/DATA.md); the Paderborn data are licensed CC BY-NC 4.0.
 
 ## What is here
 
