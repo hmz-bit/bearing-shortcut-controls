@@ -7,7 +7,7 @@ authors:
     given-names: "Hamza Mert"
     affiliation: "Istanbul Technical University, Electronics and Communication Engineering"
 license: PolyForm-Noncommercial-1.0.0
-repository-code: "https://github.com/hmz-bit/bearing-leakage-audit"
+repository-code: "https://github.com/hmz-bit/bearing-shortcut-controls"
 preferred-citation:
   type: generic
   title: "Shortcut controls for bearing-wise fault-diagnosis benchmarks: a five-dataset case study with an order-resampled envelope-spectrum network"

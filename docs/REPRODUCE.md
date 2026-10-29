@@ -9,7 +9,7 @@ Conventions
   - Code is run with "python -I" (isolated mode); each script adds its own folder to sys.path.  Scripts locate the
     repository root from their own file position, so the layout must stay as shipped (scripts/<folder>/..., results/<folder>/...).
   - Results are written into results/<folder>/ and would overwrite the shipped copies; work on a copy if the shipped files should be kept.
-  - Run times below are wall-clock times observed in the original runs (single laptop with a 4 GB GPU, several processes sharing it, the
+  - Run times below are wall-clock times observed in the original runs (single laptop with a 4 GB RTX 3050 Ti GPU, several processes sharing it, the
     LF-PNCN family partly on CPU).  They are indications, not guarantees.  "chunk" means one of several processes run in parallel over disjoint split ranges.
   - Pre-declaration guards: the scripts that evaluate frozen methods refuse to run unless results/<folder>/PREDECLARED*.txt exists
     (these files are shipped; identical copies are in protocols/).  Phase-2 evaluation additionally needs P2_ALLOW_EVAL=1.
