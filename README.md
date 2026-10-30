@@ -11,6 +11,7 @@ splits, and uses them to assess a small convolutional network on order-resampled
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23785877.svg)](https://doi.org/10.5281/zenodo.23785877)
 Archived release v1.0.0 (the version behind the numbers of the paper): https://doi.org/10.5281/zenodo.23785878.  All versions: https://doi.org/10.5281/zenodo.23785877.
+Preprint of the paper (Zenodo): https://doi.org/10.5281/zenodo.23787312.
 
 ## License and permitted use
 

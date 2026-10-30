@@ -18,6 +18,10 @@ identifiers:
 repository-code: "https://github.com/hmz-bit/bearing-shortcut-controls"
 preferred-citation:
   type: generic
+  doi: 10.5281/zenodo.23787312
+  url: "https://doi.org/10.5281/zenodo.23787312"
+  year: 2026
+  notes: "Preprint"
   title: "Shortcut controls for bearing-wise fault-diagnosis benchmarks: a five-dataset case study with an order-resampled envelope-spectrum network"
   authors:
     - family-names: "Coşkun"
