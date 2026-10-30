@@ -7,6 +7,14 @@ authors:
     given-names: "Hamza Mert"
     affiliation: "Istanbul Technical University, Electronics and Communication Engineering"
 license: PolyForm-Noncommercial-1.0.0
+doi: 10.5281/zenodo.23785877
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23785878
+    description: "Archived version v1.0.0 (Zenodo)"
+  - type: doi
+    value: 10.5281/zenodo.23785877
+    description: "All versions (Zenodo concept DOI)"
 repository-code: "https://github.com/hmz-bit/bearing-shortcut-controls"
 preferred-citation:
   type: generic

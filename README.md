@@ -9,6 +9,9 @@ bearing-level aggregation, a stage-free fault-type setting, a test-invariance ch
 splits, and uses them to assess a small convolutional network on order-resampled squared-envelope spectra (three frequency bands, three branches,
 22,947 parameters) with a paired bearing-level cluster bootstrap.  How to cite: see CITATION.cff.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23785877.svg)](https://doi.org/10.5281/zenodo.23785877)
+Archived release v1.0.0 (the version behind the numbers of the paper): https://doi.org/10.5281/zenodo.23785878.  All versions: https://doi.org/10.5281/zenodo.23785877.
+
 ## License and permitted use
 
 The code, the protocols and the result tables are released under the PolyForm Noncommercial License 1.0.0 (file LICENSE).  Use for research,
